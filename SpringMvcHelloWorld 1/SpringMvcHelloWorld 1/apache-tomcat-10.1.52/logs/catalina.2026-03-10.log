@@ -1,0 +1,220 @@
+10-Mar-2026 21:23:39.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.3
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/abiralkhanal/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:23:39.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/conf/logging.properties
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Mar-2026 21:23:39.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Mar-2026 21:23:39.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Mar-2026 21:23:39.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:23:39.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:23:39.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/temp
+10-Mar-2026 21:23:39.737 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/abiralkhanal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10-Mar-2026 21:23:39.912 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:23:39.929 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [325] milliseconds
+10-Mar-2026 21:23:39.951 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Mar-2026 21:23:39.951 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+10-Mar-2026 21:23:39.965 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld.war]
+10-Mar-2026 21:23:40.140 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [13] column [31]
+	org.xml.sax.SAXParseException; systemId: file:/Users/abiralkhanal/Documents/SpringMvcHelloWorld%201/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld/WEB-INF/web.xml; lineNumber: 13; columnNumber: 31; Content is not allowed in prolog.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1008)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1506)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:114)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1246)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:971)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:288)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4368)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:962)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1900)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:766)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:417)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+10-Mar-2026 21:23:40.142 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/Users/abiralkhanal/Documents/SpringMvcHelloWorld%201/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/Users/abiralkhanal/Documents/SpringMvcHelloWorld%201/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld/WEB-INF/web.xml; lineNumber: 13; columnNumber: 31; Content is not allowed in prolog.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1008)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1506)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:114)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1246)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:971)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:288)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4368)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:962)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1900)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:766)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:417)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+10-Mar-2026 21:23:40.143 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [13] column [31]
+10-Mar-2026 21:23:40.153 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+10-Mar-2026 21:23:40.187 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+10-Mar-2026 21:23:40.195 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/SpringMvcHelloWorld] startup failed due to previous errors
+10-Mar-2026 21:23:40.201 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld.war] has finished in [236] ms
+10-Mar-2026 21:23:40.201 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/docs]
+10-Mar-2026 21:23:40.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/docs] has finished in [58] ms
+10-Mar-2026 21:23:40.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/manager]
+10-Mar-2026 21:23:40.281 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/manager] has finished in [22] ms
+10-Mar-2026 21:23:40.281 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/examples]
+10-Mar-2026 21:23:40.378 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/examples] has finished in [97] ms
+10-Mar-2026 21:23:40.378 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/ROOT]
+10-Mar-2026 21:23:40.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/ROOT] has finished in [8] ms
+10-Mar-2026 21:23:40.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/host-manager]
+10-Mar-2026 21:23:40.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/host-manager] has finished in [9] ms
+10-Mar-2026 21:23:40.397 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:23:40.407 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [477] milliseconds
+10-Mar-2026 21:24:45.032 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+10-Mar-2026 21:24:45.032 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:24:45.035 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Mar-2026 21:24:45.042 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:24:45.043 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:24:51.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+10-Mar-2026 21:24:51.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.3
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/abiralkhanal/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:24:51.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:24:51.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/conf/logging.properties
+10-Mar-2026 21:24:51.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Mar-2026 21:24:51.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Mar-2026 21:24:51.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Mar-2026 21:24:51.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52
+10-Mar-2026 21:24:51.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/temp
+10-Mar-2026 21:24:51.922 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/abiralkhanal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10-Mar-2026 21:24:52.053 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:24:52.067 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [248] milliseconds
+10-Mar-2026 21:24:52.085 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Mar-2026 21:24:52.085 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+10-Mar-2026 21:24:52.095 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld.war]
+10-Mar-2026 21:24:52.766 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Mar-2026 21:24:52.828 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+10-Mar-2026 21:24:53.164 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 336 ms
+10-Mar-2026 21:24:53.170 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/SpringMvcHelloWorld.war] has finished in [1,074] ms
+10-Mar-2026 21:24:53.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/docs]
+10-Mar-2026 21:24:53.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/docs] has finished in [11] ms
+10-Mar-2026 21:24:53.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/manager]
+10-Mar-2026 21:24:53.196 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/manager] has finished in [15] ms
+10-Mar-2026 21:24:53.196 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/examples]
+10-Mar-2026 21:24:53.276 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/examples] has finished in [80] ms
+10-Mar-2026 21:24:53.276 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/ROOT]
+10-Mar-2026 21:24:53.283 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/ROOT] has finished in [7] ms
+10-Mar-2026 21:24:53.283 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/host-manager]
+10-Mar-2026 21:24:53.290 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/abiralkhanal/Documents/SpringMvcHelloWorld 1/apache-tomcat-10.1.52/webapps/host-manager] has finished in [7] ms
+10-Mar-2026 21:24:53.292 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Mar-2026 21:24:53.297 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1229] milliseconds

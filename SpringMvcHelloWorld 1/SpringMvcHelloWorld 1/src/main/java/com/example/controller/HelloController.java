@@ -48,6 +48,10 @@ public class HelloController {
         return "redirect:/home";
     }
 
+     @GetMapping("/hello")
+    public String hello() {
+        return "hello";
+    }
     /**
      * Handles GET requests to "/hello".
      *

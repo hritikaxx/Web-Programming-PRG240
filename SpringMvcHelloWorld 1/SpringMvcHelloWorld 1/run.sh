@@ -22,7 +22,7 @@ stop_tomcat() {
         "$TOMCAT_DIR/bin/catalina.sh" stop 2>/dev/null
         sleep 2
     fi
-}
+} 
 
 # Handle 'stop' command
 if [ "$1" = "stop" ]; then

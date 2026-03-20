@@ -17,6 +17,9 @@
     <!-- Enable Spring MVC annotations like @Controller, @RequestMapping, @GetMapping -->
     <mvc:annotation-driven/>
 
+    <!-- Serve static resources (CSS, JS, images) from /resources/ URL path -->
+    <mvc:resources mapping="/css/**" location="/css/"/>
+
     <!-- ViewResolver: maps view names returned by Controllers to JSP files -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>

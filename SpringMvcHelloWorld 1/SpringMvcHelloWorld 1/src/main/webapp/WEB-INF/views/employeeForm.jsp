@@ -24,6 +24,12 @@
             <label for="position">Position</label>
             <input type="text" id="position" name="position" required>
 
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
             <button type="submit">Submit</button>
         </form>
     </div>

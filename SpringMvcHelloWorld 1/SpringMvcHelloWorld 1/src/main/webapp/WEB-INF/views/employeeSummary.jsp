@@ -28,6 +28,15 @@
                 <th>Position</th>
                 <td>${employee.position}</td>
             </tr>
+             <tr>
+                <th>Age</th>
+                <td>${employee.age}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>${employee.address}</td>
+            </tr>
+
         </table>
         <a class="back-link" href="${pageContext.request.contextPath}/register">Register Another Employee</a>
     </div>

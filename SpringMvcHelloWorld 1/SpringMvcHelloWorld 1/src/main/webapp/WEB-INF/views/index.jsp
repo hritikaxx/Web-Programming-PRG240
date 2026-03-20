@@ -19,7 +19,7 @@
     footer { background-color: #875e3e; color: white; text-align: center; padding: 30px 0; margin-top: 50px; }
   </style>
 </head>
-<body>
+<body>  
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg shadow-sm">

@@ -6,15 +6,19 @@ public class Employee {
     private String email;
     private String contactNumber;
     private String position;
+    private int age;
+    private String address;
 
     public Employee() {
     }
 
-    public Employee(String name, String email, String contactNumber, String position) {
+    public Employee(String name, String email, String contactNumber, String position, int age, String address) {
         this.name = name;
         this.email = email;
         this.contactNumber = contactNumber;
         this.position = position;
+        this.age = age;
+        this.address = address;
     }
 
     public String getName() {
@@ -47,5 +51,21 @@ public class Employee {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public int getAge() {
+    return age;
+    }
+
+    public void setAge(int age) {
+    this.age = age;
+    }
+
+    public String getAddress() {
+    return address;
+    }
+
+    public void setAddress(String address) {
+    this.address = address;
     }
 }

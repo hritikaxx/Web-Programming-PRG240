@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:04:56 +0545] "GET /SpringMvcHelloWorld/hello HTTP/1.1" 200 1575
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:05:04 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:05:04 +0545] "GET /SpringMvcHelloWorld/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:05:20 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 500 5114
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:12:10 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:12:28 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 500 5114

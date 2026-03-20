@@ -1,1 +1,4 @@
 com\example\controller\HelloController.class
+com\example\service\EmployeeService.class
+com\example\controller\EmployeeController.class
+com\example\model\Employee.class

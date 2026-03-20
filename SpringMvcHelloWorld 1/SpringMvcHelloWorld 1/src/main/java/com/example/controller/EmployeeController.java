@@ -26,9 +26,11 @@ public class EmployeeController {
             @RequestParam("email") String email,
             @RequestParam("contactNumber") String contactNumber,
             @RequestParam("position") String position,
+            @RequestParam("age") int age,
+            @RequestParam("address") String address, 
             Model model) {
 
-        Employee employee = employeeService.registerEmployee(name, email, contactNumber, position);
+        Employee employee = employeeService.registerEmployee(name, email, contactNumber, position, age, address);
         model.addAttribute("employee", employee);
         return "employeeSummary";
     }

@@ -4,3 +4,8 @@
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:05:20 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 500 5114
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:12:10 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:12:28 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 500 5114
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:21:59 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:22:17 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 200 1080
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:22:21 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:24:11 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 200 1081
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:24:14 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202

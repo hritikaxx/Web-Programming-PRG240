@@ -7,22 +7,12 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
-    .navbar { background-color: #C98A5B !important; }
-    .navbar-brand, .navbar .nav-link { color: white !important; }
-    .card { transition: transform 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .card:hover { transform: translateY(-5px); }
-    .btn-adopt { background-color: #C98A5B; color: white; border: none; padding: 10px 30px; }
-    .btn-adopt:hover { background-color: #a87249; color: white; }
-    footer { background-color: #875e3e; color: white; text-align: center; padding: 30px 0; margin-top: 50px; }
-  </style>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/paws.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg shadow-sm">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand fw-bold fs-4" href="#">PAWS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,19 +20,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="${pageContext.request.contextPath}/">Home</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Adopt</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html#pets">Browse Pets</a></li>
-              <li><a class="dropdown-item" href="contactpage.html">Adoption Form</a></li>
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/#pets">Browse Pets</a></li>
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/adoption">Adoption Form</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link px-3" href="contactpage.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="${pageContext.request.contextPath}/contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
               <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
             </ul>
           </li>
@@ -53,7 +47,13 @@
 
 
   <!-- HERO SECTION -->
-  <section id="home" style="background-image: url('https://i.pinimg.com/1200x/d1/d1/81/d1d18156545ed373db49a08fa9896488.jpg'); background-size: cover; background-position: bottom; padding: 100px 0; text-align: center;">
+  <section id="home" style="
+    background-image: url('https://i.pinimg.com/1200x/d1/d1/81/d1d18156545ed373db49a08fa9896488.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 0;
+    text-align: center;">
+
     <div style="background-color: rgba(0,0,0,0.4); padding: 40px 20px;">
       <h1 style="color: white;">Paws Pet Adoption Center</h1>
       <p style="color: #f0e6dc; max-width: 600px; margin: 0 auto;">
@@ -188,8 +188,9 @@
   <!-- INFO SECTION -->
   <section class="py-5">
     <div class="container">
-      <div class="bg-white rounded-3 p-4 p-md-5 shadow-sm">
+      <div class="bg-light rounded-3 p-4 p-md-5">
         <div class="row g-4">
+
           <div class="col-12 col-md-4">
             <h2>Our Services</h2>
             <ul>
@@ -199,10 +200,15 @@
               <li>Basic training guidance</li>
             </ul>
           </div>
+
           <div class="col-12 col-md-4">
             <h2>Adoption Process</h2>
-            <p>Interested adopters can visit our center, meet the pets, and complete a short adoption form. Our team ensures a good match between pet and owner.</p>
+            <p>
+              Interested adopters can visit our center, meet the pets, and complete a short
+              adoption form. Our team ensures a good match between pet and owner.
+            </p>
           </div>
+
           <div class="col-12 col-md-4">
             <h2>Why Adopt From Paws?</h2>
             <ul>
@@ -212,6 +218,7 @@
               <li>Post-adoption support</li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
@@ -224,6 +231,7 @@
     <p>© 2026 Paws Pet Adoption. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6EFE7;
+    color: #333;
+}
+
+/*Background pattern*/
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://static.vecteezy.com/system/resources/previews/031/726/951/non_2x/dog-seamless-pattern-with-paws-bones-hearts-puppy-paws-poster-print-post-card-table-cloth-cloth-shirt-curtain-flannel-foot-towel-illustration-cartoon-kawaii-cute-style-vector.jpg") center/cover no-repeat;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+/* Headings*/
+h1 { color: #4a2c2a; }
+h2 { color: #4a2c2a; }
+
+/*Navbar*/
+.navbar {
+    background-color: #C98A5B !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+
+/*Adopt Button*/
+.btn-adopt {
+    background-color: #C98A5B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 36px;
+    font-weight: 500;
+}
+
+.btn-adopt:hover {
+    background-color: #a96e44;
+    color: white;
+}
+
+/*Footer*/
+footer {
+    background-color: #875e3e;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+}
+
+footer p {
+    color: white;
+    margin: 4px 0;
+}
+
+/* Responsive: 481px-760px*/
+@media (min-width: 481px) and (max-width: 760px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+}
+
+/* Responsive:0-480px*/
+@media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+    footer { font-size: 12px; }
+}

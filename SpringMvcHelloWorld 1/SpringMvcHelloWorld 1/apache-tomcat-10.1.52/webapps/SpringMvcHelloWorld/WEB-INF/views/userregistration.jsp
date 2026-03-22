@@ -57,7 +57,7 @@ footer{
 <a class="navbar-brand fw-bold" href="index">PAWS</a>
 
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 <li class="nav-item"><a class="nav-link" href="login">Login</a></li>

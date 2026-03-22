@@ -71,7 +71,8 @@ body{
 
 <div class="d-grid gap-2 mt-4">
 <a href="login" class="btn btn-adopt">Go to Login</a>
-<a href="register" class="btn btn-outline-secondary">Register Another User</a>
+
+<a href="userregister" class="btn btn-outline-secondary">Register Another User</a>
 </div>
 
 </div>

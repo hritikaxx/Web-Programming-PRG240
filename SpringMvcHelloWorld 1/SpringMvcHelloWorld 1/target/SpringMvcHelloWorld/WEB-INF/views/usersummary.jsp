@@ -40,42 +40,44 @@ body{
 
 <div class="container py-5">
 
-    <div class="text-center mb-4">
-        <h2>🎉 Registration Successful!</h2>
-        <p>Welcome to PAWS 🐾</p>
-    </div>
+<div class="text-center mb-4">
+<h2>Registration Successful!</h2>
+<p>Welcome to PAWS</p>
+</div>
 
-    <div class="row justify-content-center">
-        <div class="col-md-6">
+<div class="row justify-content-center">
+<div class="col-md-6">
 
-            <div class="summary-card">
+<div class="summary-card">
 
-                <h5 class="mb-3">Your Details</h5>
+<h5 class="mb-3">Your Details</h5>
 
-                <table class="table">
-                    <tr>
-                        <th>Full Name</th>
-                        <td>${user.fullName}</td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>${user.email}</td>
-                    </tr>
-                    <tr>
-                        <th>Phone</th>
-                        <td>${user.phone}</td>
-                    </tr>
-                </table>
+<table class="table">
+<tr>
+<th>Full Name</th>
+<td>${user.fullName}</td>
+</tr>
 
-                <div class="d-grid gap-2 mt-4">
-                    <a href="login.jsp" class="btn btn-adopt">Go to Login</a>
-                    <a href="userregistration.jsp" class="btn btn-outline-secondary">Register Another User</a>
-                </div>
+<tr>
+<th>Email</th>
+<td>${user.email}</td>
+</tr>
 
-            </div>
+<tr>
+<th>Phone</th>
+<td>${user.phone}</td>
+</tr>
+</table>
 
-        </div>
-    </div>
+<div class="d-grid gap-2 mt-4">
+<a href="login" class="btn btn-adopt">Go to Login</a>
+<a href="userregister" class="btn btn-outline-secondary">Register Another User</a>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
 

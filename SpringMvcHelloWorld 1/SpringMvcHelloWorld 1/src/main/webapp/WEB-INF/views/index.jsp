@@ -19,7 +19,7 @@
     footer { background-color: #875e3e; color: white; text-align: center; padding: 30px 0; margin-top: 50px; }
   </style>
 </head>
-<body>  
+<body>
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg shadow-sm">
@@ -43,7 +43,7 @@
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="login.html">Login</a></li>
-              <li><a class="dropdown-item" href="register.html">Register</a></li>
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
             </ul>
           </li>
         </ul>

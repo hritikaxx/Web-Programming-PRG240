@@ -9,3 +9,15 @@
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:22:21 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:24:11 +0545] "POST /SpringMvcHelloWorld/register HTTP/1.1" 200 1081
 0:0:0:0:0:0:0:1 - - [20/Mar/2026:07:24:14 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 1202
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:12:19 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10859
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:12:20 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:12:20 +0545] "GET /favicon.ico HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:12:24 +0545] "GET /SpringMvcHelloWorld/register.html HTTP/1.1" 404 764
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:14:34 +0545] "GET /SpringMvcHelloWorld/userregistration.jsp HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:16:30 +0545] "GET /SpringMvcHelloWorld/userregistration HTTP/1.1" 404 767
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:28:57 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10859
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:28:58 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:29:00 +0545] "GET /SpringMvcHelloWorld/register.html HTTP/1.1" 404 764
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:37:55 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10861
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:37:55 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2026:08:37:59 +0545] "GET /SpringMvcHelloWorld/userregistration HTTP/1.1" 404 767

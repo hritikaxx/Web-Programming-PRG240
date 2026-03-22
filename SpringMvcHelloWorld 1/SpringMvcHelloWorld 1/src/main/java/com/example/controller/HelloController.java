@@ -64,4 +64,9 @@ public class HelloController {
     public String index() {
     return "index";
     }
+
+    @GetMapping("/registration")
+    public String userregistration() {
+    return "userregistration";
+    }
 }

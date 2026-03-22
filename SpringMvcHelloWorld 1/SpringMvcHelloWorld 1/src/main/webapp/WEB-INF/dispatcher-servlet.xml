@@ -11,8 +11,8 @@
             http://www.springframework.org/schema/mvc
             http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!-- Scan the 'com.example' package for Spring components (@Controller, @Service, etc.) -->
-    <context:component-scan base-package="com.example"/>
+    <!-- Scan the base package for Spring components (@Controller, @Service, etc.) -->
+    <context:component-scan base-package="com"/>
 
     <!-- Enable Spring MVC annotations like @Controller, @RequestMapping, @GetMapping -->
     <mvc:annotation-driven/>

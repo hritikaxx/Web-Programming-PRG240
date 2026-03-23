@@ -1,6 +1,9 @@
+com\paws\controller\LoginController.class
+com\example\service\EmployeeService.class
+com\example\model\Employee.class
+com\example\service\UserService.class
 com\paws\model\User.class
 com\example\controller\HelloController.class
-com\example\service\EmployeeService.class
 com\example\controller\EmployeeController.class
-com\example\model\Employee.class
 com\paws\controller\UserController.class
+com\example\service\LoginService.class

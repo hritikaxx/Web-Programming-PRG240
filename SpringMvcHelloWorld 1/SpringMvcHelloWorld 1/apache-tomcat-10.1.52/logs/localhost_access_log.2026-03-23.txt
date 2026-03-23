@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [23/Mar/2026:06:46:41 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [23/Mar/2026:06:46:41 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 200 1597
+0:0:0:0:0:0:0:1 - - [23/Mar/2026:06:46:44 +0545] "GET /SpringMvcHelloWorld/userregister HTTP/1.1" 200 2903
+0:0:0:0:0:0:0:1 - - [23/Mar/2026:06:47:33 +0545] "POST /SpringMvcHelloWorld/registerUser HTTP/1.1" 200 1484

@@ -1,4 +1,4 @@
-package com.paws.controller;
+package com.example.controller;
 
 import com.example.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,6 @@ public class LoginController {
 
     @PostMapping("/loginUser")
     public String loginUser(@RequestParam("username") String username, @RequestParam("password") String password, Model model) {
-        // Simple login - no validation as requested
         model.addAttribute("username", username);
         return "loginsummary";
     }

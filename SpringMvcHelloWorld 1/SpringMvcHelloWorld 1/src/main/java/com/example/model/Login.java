@@ -1,4 +1,4 @@
-package com.paws.model;
+package com.example.model;
 
 public class Login {
 

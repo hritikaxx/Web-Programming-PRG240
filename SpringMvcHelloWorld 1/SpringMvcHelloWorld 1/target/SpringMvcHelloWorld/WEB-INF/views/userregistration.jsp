@@ -66,7 +66,6 @@ footer{
 </div>
 </nav>
 
-<!-- REGISTER FORM -->
 <section class="py-5">
 <div class="container">
 
@@ -93,8 +92,8 @@ footer{
 </div>
 
 <div class="mb-3">
-<label class="form-label">Phone</label>
-<input type="text" class="form-control" name="phone" required>
+<label class="form-label">Username</label>
+<input type="text" class="form-control" name="username" required>
 </div>
 
 <div class="mb-3">
@@ -124,7 +123,6 @@ Already have an account? <a href="login">Login</a>
 </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
 <p><b>Opening Hours:</b> Sunday – Friday | 10:00 AM – 5:00 PM</p>
 <p>© 2026 PAWS Pet Adoption</p>

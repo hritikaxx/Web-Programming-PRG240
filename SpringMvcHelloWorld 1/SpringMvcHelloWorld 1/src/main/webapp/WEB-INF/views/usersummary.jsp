@@ -64,8 +64,8 @@ body{
 </tr>
 
 <tr>
-<th>Phone</th>
-<td>${user.phone}</td>
+<th>Username</th>
+<td>${user.username}</td>
 </tr>
 </table>
 

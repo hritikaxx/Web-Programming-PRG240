@@ -7,6 +7,16 @@ public class User {
     private String username;
     private String password;
 
+    public User() {
+    }
+
+    public User(String fullName, String email, String username, String password) {
+        this.fullName = fullName;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
+
     public String getFullName() { return fullName; }
     public void setFullName(String fullName) { this.fullName = fullName; }
 

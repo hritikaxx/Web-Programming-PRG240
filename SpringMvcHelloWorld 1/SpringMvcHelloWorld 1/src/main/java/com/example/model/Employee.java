@@ -1,24 +1,43 @@
 package com.example.model;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+
 public class Employee {
 
+    private Long id;
+
+    @NotBlank(message = "Name is required")
     private String name;
+
+    @NotBlank(message = "Email is required")
+    @Email(message = "Email must be a valid email address")
     private String email;
+
+    @NotBlank(message = "Contact number is required")
+    @Pattern(regexp = "^\\d{10}$", message = "Contact number must be exactly 10 digits")
     private String contactNumber;
+
+    @NotBlank(message = "Position is required")
     private String position;
-    private int age;
-    private String address;
 
     public Employee() {
     }
 
-    public Employee(String name, String email, String contactNumber, String position, int age, String address) {
+    public Employee(String name, String email, String contactNumber, String position) {
         this.name = name;
         this.email = email;
         this.contactNumber = contactNumber;
         this.position = position;
-        this.age = age;
-        this.address = address;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -52,20 +71,4 @@ public class Employee {
     public void setPosition(String position) {
         this.position = position;
     }
-
-    public int getAge() {
-    return age;
-    }
-
-    public void setAge(int age) {
-    this.age = age;
-    }
-
-    public String getAddress() {
-    return address;
-    }
-
-    public void setAddress(String address) {
-    this.address = address;
-    }
-} 
+}

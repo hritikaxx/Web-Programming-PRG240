@@ -101,11 +101,6 @@ footer{
 <input type="password" class="form-control" name="password" required>
 </div>
 
-<div class="mb-3">
-<label class="form-label">Confirm Password</label>
-<input type="password" class="form-control" name="confirmPassword" required>
-</div>
-
 <div class="d-grid">
 <button type="submit" class="btn btn-adopt">Create Account</button>
 </div>

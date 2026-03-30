@@ -17,3 +17,7 @@
 0:0:0:0:0:0:0:1 - - [25/Mar/2026:08:28:39 +0545] "GET /SpringMvcHelloWorld/ HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [25/Mar/2026:08:28:39 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
 0:0:0:0:0:0:0:1 - - [25/Mar/2026:08:36:47 +0545] "GET /SpringMvcHelloWorld/api/employees HTTP/1.1" 200 56
+0:0:0:0:0:0:0:1 - - [25/Mar/2026:13:04:18 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [25/Mar/2026:13:04:18 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 200 1597
+0:0:0:0:0:0:0:1 - - [25/Mar/2026:13:04:22 +0545] "GET /SpringMvcHelloWorld/register HTTP/1.1" 200 5175
+0:0:0:0:0:0:0:1 - - [25/Mar/2026:13:04:22 +0545] "GET /SpringMvcHelloWorld/css/style.css HTTP/1.1" 200 1944

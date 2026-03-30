@@ -2,6 +2,7 @@ package com.example.model;
 
 public class User {
 
+    private Long id;  
     private String fullName;
     private String email;
     private String username;
@@ -10,12 +11,16 @@ public class User {
     public User() {
     }
 
-    public User(String fullName, String email, String username, String password) {
+    public User(Long id, String fullName, String email, String username, String password) {
+        this.id = id;
         this.fullName = fullName;
         this.email = email;
         this.username = username;
         this.password = password;
     }
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
     public String getFullName() { return fullName; }
     public void setFullName(String fullName) { this.fullName = fullName; }

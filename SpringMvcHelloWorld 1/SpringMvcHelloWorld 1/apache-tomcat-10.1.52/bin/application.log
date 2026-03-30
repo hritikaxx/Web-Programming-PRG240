@@ -825,3 +825,62 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 69 common frames omitted
+2026-03-30 08:26:26 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-03-30 08:26:30 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-03-30 08:26:31 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-30 08:26:33 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7080 ms
+2026-03-30 08:28:19 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Retrieved 0 employees from database
+2026-03-30 08:33:36 [http-nio-8080-exec-1] INFO  com.example.service.EmployeeService - Retrieved 0 employees from database
+2026-03-30 08:34:14 [http-nio-8080-exec-6] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:14 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:14 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:14 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:14 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:14 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:15 [http-nio-8080-exec-5] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 4
+2026-03-30 08:34:15 [http-nio-8080-exec-4] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 3
+2026-03-30 08:34:15 [http-nio-8080-exec-8] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 6
+2026-03-30 08:34:15 [http-nio-8080-exec-6] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 5
+2026-03-30 08:34:15 [http-nio-8080-exec-7] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 1
+2026-03-30 08:34:15 [http-nio-8080-exec-6] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 5
+2026-03-30 08:34:15 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 4
+2026-03-30 08:34:15 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 3
+2026-03-30 08:34:15 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 6
+2026-03-30 08:34:15 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 1
+2026-03-30 08:34:15 [http-nio-8080-exec-6] INFO  c.e.controller.EmployeeController - Employee created via API: id=5, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-7] INFO  c.e.controller.EmployeeController - Employee created via API: id=1, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-8] INFO  c.e.controller.EmployeeController - Employee created via API: id=6, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-4] INFO  c.e.controller.EmployeeController - Employee created via API: id=3, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-5] INFO  c.e.controller.EmployeeController - Employee created via API: id=4, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:15 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:15 [http-nio-8080-exec-3] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 2
+2026-03-30 08:34:15 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 2
+2026-03-30 08:34:15 [http-nio-8080-exec-3] INFO  c.e.controller.EmployeeController - Employee created via API: id=2, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-10] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 8
+2026-03-30 08:34:15 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 8
+2026-03-30 08:34:15 [http-nio-8080-exec-10] INFO  c.e.controller.EmployeeController - Employee created via API: id=8, name=hri
+2026-03-30 08:34:15 [http-nio-8080-exec-9] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 7
+2026-03-30 08:34:15 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 7
+2026-03-30 08:34:15 [http-nio-8080-exec-9] INFO  c.e.controller.EmployeeController - Employee created via API: id=7, name=hri
+2026-03-30 08:34:17 [http-nio-8080-exec-2] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:17 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:17 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:17 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:17 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Registering new employee: name=hri, email=hri@westcliff.edu, position=boss
+2026-03-30 08:34:17 [http-nio-8080-exec-2] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 9
+2026-03-30 08:34:17 [http-nio-8080-exec-4] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 11
+2026-03-30 08:34:17 [http-nio-8080-exec-5] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 10
+2026-03-30 08:34:17 [http-nio-8080-exec-8] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 13
+2026-03-30 08:34:17 [http-nio-8080-exec-2] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 9
+2026-03-30 08:34:17 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 11
+2026-03-30 08:34:17 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 10
+2026-03-30 08:34:17 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 13
+2026-03-30 08:34:17 [http-nio-8080-exec-2] INFO  c.e.controller.EmployeeController - Employee created via API: id=9, name=hri
+2026-03-30 08:34:17 [http-nio-8080-exec-4] INFO  c.e.controller.EmployeeController - Employee created via API: id=11, name=hri
+2026-03-30 08:34:17 [http-nio-8080-exec-8] INFO  c.e.controller.EmployeeController - Employee created via API: id=13, name=hri
+2026-03-30 08:34:17 [http-nio-8080-exec-5] INFO  c.e.controller.EmployeeController - Employee created via API: id=10, name=hri
+2026-03-30 08:34:17 [http-nio-8080-exec-7] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 12
+2026-03-30 08:34:17 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 12
+2026-03-30 08:34:17 [http-nio-8080-exec-7] INFO  c.e.controller.EmployeeController - Employee created via API: id=12, name=hri
+2026-03-30 08:40:58 [http-nio-8080-exec-6] INFO  com.example.service.EmployeeService - Retrieved 13 employees from database

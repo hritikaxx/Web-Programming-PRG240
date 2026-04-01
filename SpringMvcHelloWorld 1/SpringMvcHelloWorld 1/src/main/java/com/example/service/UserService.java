@@ -1,6 +1,10 @@
 package com.example.service;
 
+import com.example.dao.UserDAO;
+import com.example.dto.UserDTO;
 import com.example.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,47 +13,75 @@ import java.util.List;
 @Service
 public class UserService {
 
-    private List<User> userList = new ArrayList<>();
-    private Long idCounter = 1L;
+    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
-    // CREATE
+    private final UserDAO userDAO;
+
+    public UserService(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
+
     public User registerUser(String fullName, String email, String username, String password) {
-        User user = new User(idCounter++, fullName, email, username, password);
-        userList.add(user);
-        return user;
+        logger.info("Registering new user: fullName={}, email={}, username={}", fullName, email, username);
+
+        UserDTO dto = new UserDTO(fullName, email, username, password);
+        UserDTO saved = userDAO.save(dto);
+
+        logger.info("User registered successfully with id: {}", saved.getId());
+        return toUser(saved);
     }
 
-    // GET ALL
     public List<User> getAllUsers() {
-        return userList;
+        List<UserDTO> dtos = userDAO.findAll();
+        logger.info("Retrieved {} users from database", dtos.size());
+
+        List<User> users = new ArrayList<>();
+        for (UserDTO dto : dtos) {
+            users.add(toUser(dto));
+        }
+        return users;
     }
 
-    // GET BY ID
     public User getUserById(Long id) {
-        for (User user : userList) {
-            if (user.getId().equals(id)) {
-                return user;
-            }
+        UserDTO dto = userDAO.findById(id);
+
+        if (dto == null) {
+            logger.info("User not found with id: {}", id);
+            return null;
         }
-        return null;
+
+        return toUser(dto);
     }
 
-    // UPDATE
-    public User updateUser(Long id, User updatedUser) {
-        for (User user : userList) {
-            if (user.getId().equals(id)) {
-                user.setFullName(updatedUser.getFullName());
-                user.setEmail(updatedUser.getEmail());
-                user.setUsername(updatedUser.getUsername());
-                user.setPassword(updatedUser.getPassword());
-                return user;
-            }
+    public User updateUser(Long id, User updated) {
+        UserDTO dto = new UserDTO(
+                updated.getFullName(),
+                updated.getEmail(),
+                updated.getUsername(),
+                updated.getPassword()
+        );
+
+        UserDTO result = userDAO.update(id, dto);
+
+        if (result == null) {
+            logger.info("Cannot update - user not found with id: {}", id);
+            return null;
         }
-        return null;
+
+        return toUser(result);
     }
 
-    // DELETE
     public boolean deleteUser(Long id) {
-        return userList.removeIf(user -> user.getId().equals(id));
+        boolean deleted = userDAO.delete(id);
+        if (!deleted) {
+            logger.info("Cannot delete - user not found with id: {}", id);
+        }
+        return deleted;
+    }
+
+    private User toUser(UserDTO dto) {
+        User user = new User(dto.getFullName(), dto.getEmail(), dto.getUsername(), dto.getPassword());
+        user.setId(dto.getId());
+        return user;
     }
 }

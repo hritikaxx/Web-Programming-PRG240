@@ -32,6 +32,11 @@ public class UserController {
         return "userregistration";
     }
 
+    @GetMapping("/employeeForm")
+    public String showEmployeeForm() {
+        return "employeeForm";
+}
+
     @PostMapping("/registerUser")
     public String registerUser(
             @RequestParam("fullName") String fullName,

@@ -79,26 +79,26 @@ footer{
 
 <div class="info-box">
 
-<form action="registerUser" method="post">
+<form id="userForm">
 
 <div class="mb-3">
 <label class="form-label">Full Name</label>
-<input type="text" class="form-control" name="fullName" required>
+<input type="text" class="form-control" id="fullName" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Email</label>
-<input type="email" class="form-control" name="email" required>
+<input type="email" class="form-control" id="email" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Username</label>
-<input type="text" class="form-control" name="username" required>
+<input type="text" class="form-control" id="username" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Password</label>
-<input type="password" class="form-control" name="password" required>
+<input type="password" class="form-control" id="password" required>
 </div>
 
 <div class="d-grid">
@@ -124,6 +124,25 @@ Already have an account? <a href="login">Login</a>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById('userForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Simple validation check
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (!fullName || !email || !username || !password) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    window.location.href = '${pageContext.request.contextPath}/employeeForm';
+});
+</script>
 
 </body>
 </html>

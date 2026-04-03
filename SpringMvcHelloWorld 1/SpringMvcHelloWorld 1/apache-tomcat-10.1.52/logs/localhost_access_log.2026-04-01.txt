@@ -41,3 +41,11 @@
 0:0:0:0:0:0:0:1 - - [01/Apr/2026:07:47:50 +0545] "GET /SpringMvcHelloWorld/userregister HTTP/1.1" 200 2743
 0:0:0:0:0:0:0:1 - - [01/Apr/2026:07:47:54 +0545] "GET /SpringMvcHelloWorld/login HTTP/1.1" 200 2492
 0:0:0:0:0:0:0:1 - - [01/Apr/2026:07:47:55 +0545] "GET /SpringMvcHelloWorld/userregister HTTP/1.1" 200 2743
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:07:52:20 +0545] "GET /SpringMvcHelloWorld/userregister HTTP/1.1" 200 2743
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:26 +0545] "GET /SpringMvcHelloWorld/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:26 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:34 +0545] "GET /SpringMvcHelloWorld/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:34 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:36 +0545] "GET /SpringMvcHelloWorld/contact HTTP/1.1" 404 758
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:13:54 +0545] "POST /SpringMvcHelloWorld/api/users HTTP/1.1" 200 170
+0:0:0:0:0:0:0:1 - - [01/Apr/2026:08:15:20 +0545] "GET /SpringMvcHelloWorld/max.html HTTP/1.1" 404 759

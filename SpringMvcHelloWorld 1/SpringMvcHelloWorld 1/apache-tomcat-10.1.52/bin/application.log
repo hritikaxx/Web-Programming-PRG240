@@ -1716,3 +1716,51 @@ com.example.controller.EmployeeController#registerEmployeeApi(Employee, BindingR
 2026-04-01 07:47:10 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User registered successfully with id: 3
 2026-04-01 07:47:10 [http-nio-8080-exec-2] INFO  c.example.controller.UserController - User created via API: id=3, username=hri
 2026-04-01 07:47:18 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Retrieved 3 users from database
+2026-04-01 07:52:11 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-01 07:52:15 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-01 07:52:15 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-01 07:52:16 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-01 07:52:18 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6926 ms
+2026-04-01 08:13:36 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/contact
+2026-04-01 08:13:36 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/contact.
+2026-04-01 08:13:54 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-01 08:13:54 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 4
+2026-04-01 08:13:54 [http-nio-8080-exec-10] INFO  com.example.service.UserService - User registered successfully with id: 4
+2026-04-01 08:13:54 [http-nio-8080-exec-10] INFO  c.example.controller.UserController - User created via API: id=4, username=hri
+2026-04-01 08:15:20 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/max.html
+2026-04-01 08:15:20 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/max.html.
+2026-04-03 07:01:52 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-03 07:01:56 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-03 07:01:56 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-03 07:01:56 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-03 07:01:58 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6167 ms
+2026-04-03 07:02:21 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Registering new user: fullName=Hritika Singh, email=hritika.singh@westcliff.edu, username=11
+2026-04-03 07:02:21 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 5
+2026-04-03 07:02:21 [http-nio-8080-exec-6] INFO  com.example.service.UserService - User registered successfully with id: 5
+2026-04-03 07:02:21 [http-nio-8080-exec-6] INFO  c.example.controller.UserController - User registered via form POST: id=5, username=11
+2026-04-03 07:06:30 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-03 07:06:34 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-03 07:06:34 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-03 07:06:35 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-03 07:06:37 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7001 ms
+2026-04-03 07:07:03 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/employeeForm
+2026-04-03 07:07:03 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/employeeForm.
+2026-04-03 07:11:41 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-03 07:11:45 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-03 07:11:45 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-03 07:11:46 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-03 07:11:47 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6206 ms
+2026-04-03 07:12:49 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Registering new employee: name=test, email=test@gmail.com, position=boss
+2026-04-03 07:12:49 [http-nio-8080-exec-8] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 14
+2026-04-03 07:12:49 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 14
+2026-04-03 07:12:49 [http-nio-8080-exec-8] INFO  c.e.controller.EmployeeController - Employee created via API: id=14, name=test
+2026-04-03 07:12:50 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Registering new employee: name=test, email=test@gmail.com, position=boss
+2026-04-03 07:12:50 [http-nio-8080-exec-9] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 15
+2026-04-03 07:12:50 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 15
+2026-04-03 07:12:50 [http-nio-8080-exec-9] INFO  c.e.controller.EmployeeController - Employee created via API: id=15, name=test
+2026-04-03 07:21:14 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-03 07:21:14 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 6
+2026-04-03 07:21:14 [http-nio-8080-exec-1] INFO  com.example.service.UserService - User registered successfully with id: 6
+2026-04-03 07:21:14 [http-nio-8080-exec-1] INFO  c.example.controller.UserController - User created via API: id=6, username=hri
+2026-04-03 07:21:25 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Retrieved 6 users from database
+2026-04-03 07:21:30 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Retrieved 3 employees from database

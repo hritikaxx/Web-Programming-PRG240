@@ -125,22 +125,44 @@ Already have an account? <a href="login">Login</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- ✅ JavaScript -->
 <script>
 document.getElementById('userForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Simple validation check
-    const fullName = document.getElementById('fullName').value;
-    const email = document.getElementById('email').value;
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const data = {
+        fullName: document.getElementById('fullName').value,
+        email: document.getElementById('email').value,
+        username: document.getElementById('username').value,
+        password: document.getElementById('password').value
+    };
 
-    if (!fullName || !email || !username || !password) {
+    // Simple validation
+    if (!data.fullName || !data.email || !data.username || !data.password) {
         alert("Please fill all fields");
         return;
     }
 
-    window.location.href = '${pageContext.request.contextPath}/employeeForm';
+    // 🔥 Send data to backend (User API)
+    fetch('${pageContext.request.contextPath}/api/users/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.status === 'success') {
+            // ✅ Redirect to Employee Form
+            window.location.href = '${pageContext.request.contextPath}/employeeForm';
+        } else {
+            alert("Error saving user");
+        }
+    })
+    .catch(error => {
+        alert("Server error. Please try again.");
+    });
 });
 </script>
 

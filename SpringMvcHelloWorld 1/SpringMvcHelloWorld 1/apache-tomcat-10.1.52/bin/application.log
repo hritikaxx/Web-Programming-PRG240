@@ -1764,3 +1764,49 @@ com.example.controller.EmployeeController#registerEmployeeApi(Employee, BindingR
 2026-04-03 07:21:14 [http-nio-8080-exec-1] INFO  c.example.controller.UserController - User created via API: id=6, username=hri
 2026-04-03 07:21:25 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Retrieved 6 users from database
 2026-04-03 07:21:30 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Retrieved 3 employees from database
+2026-04-03 07:44:56 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-03 07:45:00 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-03 07:45:01 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-03 07:45:01 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-03 07:45:04 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7570 ms
+2026-04-03 07:45:20 [http-nio-8080-exec-3] INFO  com.example.service.LoginService - Login attempt for username:  hri
+2026-04-03 07:45:20 [http-nio-8080-exec-3] INFO  com.example.service.LoginService - Login successful for username:  hri
+2026-04-03 07:45:20 [http-nio-8080-exec-3] INFO  c.example.controller.LoginController - User logged in via form: username= hri
+2026-04-03 07:45:51 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Registering new employee: name=test, email=test@gmail.com, position=boss
+2026-04-03 07:45:51 [http-nio-8080-exec-10] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 16
+2026-04-03 07:45:51 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 16
+2026-04-03 07:45:51 [http-nio-8080-exec-10] INFO  c.e.controller.EmployeeController - Employee created via API: id=16, name=test
+2026-04-03 07:46:04 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Retrieved 6 users from database
+2026-04-03 07:58:36 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-03 07:58:40 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-03 07:58:40 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-03 07:58:41 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-03 07:58:43 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7202 ms
+2026-04-03 07:59:04 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Registering new user: fullName=test1, email=test@gmail.com, username=test1
+2026-04-03 07:59:04 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 7
+2026-04-03 07:59:04 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User registered successfully with id: 7
+2026-04-03 07:59:04 [http-nio-8080-exec-2] INFO  c.example.controller.UserController - User created via API: id=7, username=test1
+2026-04-03 07:59:10 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Retrieved 7 users from database
+2026-04-06 06:37:43 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-06 06:37:46 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-06 06:37:46 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-06 06:37:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-06 06:37:49 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6491 ms
+2026-04-06 06:39:15 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Retrieved 7 users from database
+2026-04-06 06:45:14 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=hritika, email=hritika@gmail.com, username=hritika
+2026-04-06 06:45:14 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 8
+2026-04-06 06:45:14 [http-nio-8080-exec-9] INFO  com.example.service.UserService - User registered successfully with id: 8
+2026-04-06 06:45:14 [http-nio-8080-exec-9] INFO  c.example.controller.UserController - User created via API: id=8, username=hritika
+2026-04-06 06:45:48 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Registering new user: fullName=hritika, email=hritika@gmail.com, username=hritika
+2026-04-06 06:45:49 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 9
+2026-04-06 06:45:49 [http-nio-8080-exec-4] INFO  com.example.service.UserService - User registered successfully with id: 9
+2026-04-06 06:45:49 [http-nio-8080-exec-4] INFO  c.example.controller.UserController - User created via API: id=9, username=hritika
+2026-04-06 07:27:25 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-06 07:27:25 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 10
+2026-04-06 07:27:25 [http-nio-8080-exec-9] INFO  com.example.service.UserService - User registered successfully with id: 10
+2026-04-06 07:27:25 [http-nio-8080-exec-9] INFO  c.example.controller.UserController - User created via API: id=10, username=hri
+2026-04-06 07:30:51 [http-nio-8080-exec-1] INFO  com.example.service.EmployeeService - Registering new employee: name=hritika, email=hritika@gmail.com, position=manager
+2026-04-06 07:30:52 [http-nio-8080-exec-1] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 17
+2026-04-06 07:30:52 [http-nio-8080-exec-1] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 17
+2026-04-06 07:30:52 [http-nio-8080-exec-1] INFO  c.e.controller.EmployeeController - Employee created via API: id=17, name=hritika
+2026-04-06 07:52:44 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Retrieved 10 users from database

@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:37:51 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:37:51 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:37:55 +0545] "GET /SpringMvcHelloWorld/userregister HTTP/1.1" 200 3951
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:39:15 +0545] "GET /SpringMvcHelloWorld/api/users HTTP/1.1" 200 711
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:45:14 +0545] "POST /SpringMvcHelloWorld/api/users/register HTTP/1.1" 200 180
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:45:14 +0545] "GET /SpringMvcHelloWorld/employeeForm HTTP/1.1" 200 5175
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:45:14 +0545] "GET /SpringMvcHelloWorld/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:45:49 +0545] "POST /SpringMvcHelloWorld/api/users/register HTTP/1.1" 200 180
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:06:45:49 +0545] "GET /SpringMvcHelloWorld/employeeForm HTTP/1.1" 200 5175
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:07:27:25 +0545] "POST /SpringMvcHelloWorld/api/users HTTP/1.1" 200 171
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:07:30:52 +0545] "POST /SpringMvcHelloWorld/api/register HTTP/1.1" 200 192
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:07:30:52 +0545] "GET /SpringMvcHelloWorld/register/summary?name=hritika&email=hritika%40gmail.com&contactNumber=9999999999&position=manager HTTP/1.1" 200 906
+0:0:0:0:0:0:0:1 - - [06/Apr/2026:07:52:44 +0545] "GET /SpringMvcHelloWorld/api/users HTTP/1.1" 200 1006

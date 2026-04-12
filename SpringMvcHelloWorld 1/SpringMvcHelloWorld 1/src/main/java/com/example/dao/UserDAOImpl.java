@@ -3,6 +3,7 @@ package com.example.dao;
 import com.example.dto.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -40,7 +41,7 @@ public class UserDAOImpl implements UserDAO {
                             "id BIGINT AUTO_INCREMENT PRIMARY KEY, " +
                             "full_name VARCHAR(255) NOT NULL, " +
                             "email VARCHAR(255) NOT NULL, " +
-                            "username VARCHAR(255) NOT NULL, " +
+                            "username VARCHAR(255) NOT NULL UNIQUE, " + // ✅ added UNIQUE
                             "password VARCHAR(255) NOT NULL" +
                             ")"
             );
@@ -66,16 +67,24 @@ public class UserDAOImpl implements UserDAO {
                 return ps;
             }, keyHolder);
 
-            Long generatedId = keyHolder.getKey().longValue();
-            user.setId(generatedId);
-            logger.info("User inserted successfully with id: {}", generatedId);
+            Number key = keyHolder.getKey(); // ✅ null safety fix
+            if (key != null) {
+                user.setId(key.longValue());
+            }
+
+            logger.info("User inserted successfully with id: {}", user.getId());
             return user;
+
+        } catch (DuplicateKeyException e) { // ✅ handle duplicate username
+            logger.error("Username already exists: {}", user.getUsername());
+            throw new RuntimeException("Username already exists");
+
         } catch (Exception e) {
             logger.error("Database error while saving user: {}", e.getMessage(), e);
             throw e;
         }
     }
- 
+
     @Override
     public List<UserDTO> findAll() {
         try {
@@ -92,10 +101,8 @@ public class UserDAOImpl implements UserDAO {
             List<UserDTO> results = jdbcTemplate.query(
                     "SELECT * FROM users WHERE id = ?", rowMapper, id);
 
-            if (results.isEmpty()) {
-                return null;
-            }
-            return results.get(0);
+            return results.stream().findFirst().orElse(null); // ✅ cleaner
+
         } catch (Exception e) {
             logger.error("Database error while fetching user with id {}: {}", id, e.getMessage(), e);
             throw e;
@@ -121,6 +128,7 @@ public class UserDAOImpl implements UserDAO {
             user.setId(id);
             logger.info("User updated successfully with id: {}", id);
             return user;
+
         } catch (Exception e) {
             logger.error("Database error while updating user with id {}: {}", id, e.getMessage(), e);
             throw e;
@@ -132,14 +140,29 @@ public class UserDAOImpl implements UserDAO {
         try {
             int rowsDeleted = jdbcTemplate.update("DELETE FROM users WHERE id = ?", id);
 
-            if (rowsDeleted > 0) {
+            boolean deleted = rowsDeleted > 0; // ✅ cleaner
+            if (deleted) {
                 logger.info("User deleted successfully with id: {}", id);
-                return true;
             }
-            return false;
+            return deleted;
+
         } catch (Exception e) {
             logger.error("Database error while deleting user with id {}: {}", id, e.getMessage(), e);
             throw e;
         }
     }
+
+    @Override
+    public UserDTO findByUsername(String username) {
+    try {
+        List<UserDTO> results = jdbcTemplate.query(
+                "SELECT * FROM users WHERE username = ?", rowMapper, username);
+
+        return results.stream().findFirst().orElse(null);
+
+    } catch (Exception e) {
+        logger.error("Database error while fetching user with username {}: {}", username, e.getMessage(), e);
+        throw e;
+    }
+}
 }

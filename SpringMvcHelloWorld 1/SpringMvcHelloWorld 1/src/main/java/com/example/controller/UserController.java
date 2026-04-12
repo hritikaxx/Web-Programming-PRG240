@@ -32,10 +32,10 @@ public class UserController {
         return "userregistration";
     }
 
-    @GetMapping("/employeeForm")
-    public String showEmployeeForm() {
-        return "employeeForm";
-}
+    @GetMapping("/user/login")
+    public String showLoginPage() {
+    return "login";
+    }
 
     @PostMapping("/registerUser")
     public String registerUser(
@@ -232,4 +232,6 @@ public class UserController {
         response.put("errors", errors);
         return ResponseEntity.badRequest().body(response);
     }
+
+    
 }

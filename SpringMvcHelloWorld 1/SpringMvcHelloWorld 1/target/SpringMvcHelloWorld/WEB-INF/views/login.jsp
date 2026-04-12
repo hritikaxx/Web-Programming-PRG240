@@ -60,7 +60,7 @@ footer{
 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a></li>
+<li class="nav-item"><a class="nav-link" href="userregister">Register</a></li>
 </ul>
 
 </div>
@@ -79,7 +79,7 @@ footer{
 
 <div class="info-box">
 
-<form action="loginUser" method="post">
+<form action="${pageContext.request.contextPath}/loginUser" method="post">
 
 <div class="mb-3">
 <label class="form-label">Username</label>

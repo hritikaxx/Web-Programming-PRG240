@@ -82,6 +82,7 @@ footer{
 
 <div class="d-grid gap-2 mt-4">
 <a href="${pageContext.request.contextPath}/" class="btn btn-adopt">Go to Home</a>
+<a href="${pageContext.request.contextPath}/logout" class="btn btn-outline-secondary">Logout</a>
 </div>
 
 </div>

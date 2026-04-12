@@ -143,7 +143,6 @@ document.getElementById('userForm').addEventListener('submit', function(e) {
         return;
     }
 
-    // 🔥 Send data to backend (User API)
     fetch('${pageContext.request.contextPath}/api/users/register', {
         method: 'POST',
         headers: {
@@ -155,7 +154,7 @@ document.getElementById('userForm').addEventListener('submit', function(e) {
     .then(result => {
         if (result.status === 'success') {
             // ✅ Redirect to Employee Form
-            window.location.href = '${pageContext.request.contextPath}/employeeForm';
+            window.location.href = '${pageContext.request.contextPath}/uder/login';
         } else {
             alert("Error saving user");
         }

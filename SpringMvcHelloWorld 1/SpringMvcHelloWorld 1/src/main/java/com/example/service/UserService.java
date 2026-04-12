@@ -31,6 +31,20 @@ public class UserService {
         return toUser(saved);
     }
 
+    public boolean authenticate(String username, String password) {
+        logger.info("Authenticating user: {}", username);
+
+        UserDTO user = userDAO.findByUsername(username);
+
+        if (user != null && user.getPassword().equals(password)) {
+            logger.info("Authentication successful for user: {}", username);
+            return true;
+        }
+
+        logger.warn("Authentication failed for user: {}", username);
+        return false;
+    }
+
     public List<User> getAllUsers() {
         List<UserDTO> dtos = userDAO.findAll();
         logger.info("Retrieved {} users from database", dtos.size());

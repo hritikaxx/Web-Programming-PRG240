@@ -17,6 +17,24 @@
     <!-- Enable Spring MVC annotations like @Controller, @RequestMapping, @GetMapping -->
     <mvc:annotation-driven/>
 
+    <!-- JWT auth: protect employee API endpoints. Login is excluded. -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/employees"/>
+            <mvc:mapping path="/api/employees/**"/>
+            <mvc:mapping path="/api/register"/>
+            <mvc:exclude-mapping path="/api/auth/**"/>
+            <bean class="com.example.security.JwtAuthInterceptor"/>
+        </mvc:interceptor>
+
+        <!-- Session auth: protect employee UI pages. Only logged-in users can access. -->
+        <mvc:interceptor>
+            <mvc:mapping path="/register"/>
+            <mvc:mapping path="/register/**"/>
+            <bean class="com.example.security.SessionAuthInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!-- Serve static resources (CSS, JS, images) from /resources/ URL path -->
     <mvc:resources mapping="/css/**" location="/css/"/>
 

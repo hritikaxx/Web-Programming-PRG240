@@ -1,3 +1,4 @@
+com\example\controller\AuthController.class
 com\example\controller\LoginController.class
 com\example\dao\EmployeeDAOImpl.class
 com\example\service\EmployeeService.class
@@ -7,10 +8,13 @@ com\example\controller\UserController.class
 com\example\model\Login.class
 com\example\dao\UserDAOImpl.class
 com\example\dto\EmployeeDTO.class
+com\example\security\JwtUtil.class
 com\example\service\UserService.class
 com\example\controller\HelloController.class
+com\example\security\JwtAuthInterceptor.class
 com\example\dao\UserDAO.class
 com\example\model\User.class
 com\example\dao\EmployeeDAO.class
 com\example\dto\UserDTO.class
+com\example\security\SessionAuthInterceptor.class
 com\example\service\LoginService.class

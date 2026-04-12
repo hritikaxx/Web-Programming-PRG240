@@ -60,7 +60,7 @@ footer{
 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="userregister">Register</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a></li>
 </ul>
 
 </div>

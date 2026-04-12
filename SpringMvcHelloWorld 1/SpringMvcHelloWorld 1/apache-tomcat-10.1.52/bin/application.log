@@ -3945,3 +3945,30 @@ com.example.controller.LoginController#showLoginPage() mapped.
 2026-04-12 14:27:50 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login attempt for username: hri
 2026-04-12 14:27:50 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login successful for username: hri
 2026-04-12 14:27:50 [http-nio-8080-exec-8] INFO  c.example.controller.LoginController - User logged in via form: username=hri
+2026-04-12 18:29:46 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-12 18:29:50 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-12 18:29:50 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-12 18:29:52 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-12 18:29:53 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7020 ms
+2026-04-12 18:33:50 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Registering new user: fullName=hri, email=hri@hri.co, username=hri
+2026-04-12 18:33:51 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 29
+2026-04-12 18:33:51 [http-nio-8080-exec-5] INFO  com.example.service.UserService - User registered successfully with id: 29
+2026-04-12 18:33:51 [http-nio-8080-exec-5] INFO  c.example.controller.UserController - User created via API: id=29, username=hri
+2026-04-12 18:33:58 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/user/loginUser
+2026-04-12 18:33:58 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/user/loginUser.
+2026-04-12 18:36:51 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/user/loginUser
+2026-04-12 18:36:51 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/user/loginUser.
+2026-04-12 18:40:16 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-12 18:40:21 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-12 18:40:21 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-12 18:40:23 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-12 18:40:24 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7734 ms
+2026-04-12 18:40:26 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/user/loginUser
+2026-04-12 18:40:26 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/user/loginUser.
+2026-04-12 18:40:52 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Registering new user: fullName=hri, email=hri@hri.cp, username=hri
+2026-04-12 18:40:53 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 30
+2026-04-12 18:40:53 [http-nio-8080-exec-5] INFO  com.example.service.UserService - User registered successfully with id: 30
+2026-04-12 18:40:53 [http-nio-8080-exec-5] INFO  c.example.controller.UserController - User created via API: id=30, username=hri
+2026-04-12 18:41:01 [http-nio-8080-exec-2] INFO  com.example.service.LoginService - Login attempt for username: hrii
+2026-04-12 18:41:01 [http-nio-8080-exec-2] INFO  com.example.service.LoginService - Login successful for username: hrii
+2026-04-12 18:41:01 [http-nio-8080-exec-2] INFO  c.example.controller.LoginController - User logged in via form: username=hrii

@@ -980,3 +980,13 @@ com.example.controller.LoginController#showLoginPage() mapped.
 12-Apr-2026 14:27:22.733 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
 12-Apr-2026 14:27:22.734 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 12-Apr-2026 14:27:22.738 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@ff03384')
+12-Apr-2026 18:29:46.226 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+12-Apr-2026 18:29:46.674 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+12-Apr-2026 18:29:54.857 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+12-Apr-2026 18:29:54.857 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+12-Apr-2026 18:29:54.862 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@ff03384')
+12-Apr-2026 18:40:16.447 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+12-Apr-2026 18:40:16.962 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+12-Apr-2026 18:40:25.805 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+12-Apr-2026 18:40:25.808 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+12-Apr-2026 18:40:25.813 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@675790ca')

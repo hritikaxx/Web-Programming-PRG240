@@ -125,7 +125,7 @@ Already have an account? <a href="login">Login</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- ✅ JavaScript -->
+<!-- JavaScript -->
 <script>
 document.getElementById('userForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -153,8 +153,8 @@ document.getElementById('userForm').addEventListener('submit', function(e) {
     .then(response => response.json())
     .then(result => {
         if (result.status === 'success') {
-            // ✅ Redirect to Employee Form
-            window.location.href = '${pageContext.request.contextPath}/uder/login';
+            //  Redirect to login
+            window.location.href = '${pageContext.request.contextPath}/user/login';
         } else {
             alert("Error saving user");
         }

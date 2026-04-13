@@ -2,7 +2,6 @@ package com.example.controller;
 
 import com.example.model.Login;
 import com.example.service.LoginService;
-
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -14,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-import jakarta.servlet.http.HttpSession;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,28 +34,39 @@ public class LoginController {
 
     @GetMapping("/logout")
     public String logout(HttpSession session) {
-    session.invalidate();
-    return "redirect:/login";
+        session.invalidate();
+        return "redirect:/login";
     }
+
+    @GetMapping("/logout-home")
+    public String logoutToHome(HttpSession session) {
+    session.invalidate();
+    return "redirect:/";
+}
 
     @PostMapping("/loginUser")
     public String loginUser(
             @RequestParam("username") String username,
             @RequestParam("password") String password,
-            Model model) {
+            Model model,
+            HttpSession session) {
 
         try {
-            boolean success = loginService.loginUser(username, password);
+            String result = loginService.loginUser(username, password);
 
-            if (!success) {
-                logger.warn("Login failed for username: {}", username);
-                model.addAttribute("errorMessage", "Invalid username or password.");
+            if (result.equals("USERNAME_NOT_FOUND")) {
+                model.addAttribute("errorMessage", "Invalid username. Please register first.");
                 return "login";
             }
 
-            logger.info("User logged in via form: username={}", username);
-            model.addAttribute("username", username);
-            return "loginsummary";
+            if (result.equals("WRONG_PASSWORD")) {
+                model.addAttribute("errorMessage", "Wrong password. Please try again.");
+                return "login";
+            }
+
+            session.setAttribute("loggedInUser", username);
+            return "redirect:/employeeForm";
+
         } catch (Exception e) {
             logger.error("Error during login for username {}: {}", username, e.getMessage(), e);
             model.addAttribute("errorMessage", "Login failed. Please try again.");
@@ -79,13 +88,19 @@ public class LoginController {
         }
 
         try {
-            boolean success = loginService.loginUser(login.getUsername(), login.getPassword());
+            String result = loginService.loginUser(login.getUsername(), login.getPassword());
 
-            if (!success) {
-                logger.warn("Login failed via API for username: {}", login.getUsername());
+            if (result.equals("USERNAME_NOT_FOUND")) {
                 Map<String, Object> response = new HashMap<>();
                 response.put("status", "error");
-                response.put("message", "Invalid username or password.");
+                response.put("message", "Invalid username.");
+                return ResponseEntity.status(401).body(response);
+            }
+
+            if (result.equals("WRONG_PASSWORD")) {
+                Map<String, Object> response = new HashMap<>();
+                response.put("status", "error");
+                response.put("message", "Wrong password.");
                 return ResponseEntity.status(401).body(response);
             }
 
@@ -95,6 +110,7 @@ public class LoginController {
             response.put("message", "Login successful");
             response.put("username", login.getUsername());
             return ResponseEntity.ok(response);
+
         } catch (Exception e) {
             logger.error("Error during API login for username {}: {}", login.getUsername(), e.getMessage(), e);
             Map<String, Object> response = new HashMap<>();

@@ -11,6 +11,7 @@
 <body>
     <div class="card">
         <h1>Registration Summary</h1>
+        <a href="${pageContext.request.contextPath}/logout-home">Logout</a>
         <table>
             <tr>
                 <th>Name</th>

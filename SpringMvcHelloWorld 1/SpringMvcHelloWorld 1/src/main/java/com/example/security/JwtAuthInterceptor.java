@@ -14,14 +14,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Validates the Authorization: Bearer <jwt> header before allowing the
- * request to reach a protected controller method.
- *
- * Responses:
- *   - missing/invalid token  -> 401 { message: "Incorrect JWT token" }
- *   - expired token          -> 401 { message: "Expired JWT token" }
- */
 @Component
 public class JwtAuthInterceptor implements HandlerInterceptor {
 
@@ -34,6 +26,11 @@ public class JwtAuthInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
+
+        String path = request.getRequestURI();
+        if (path.contains("/api/register") || path.contains("/api/employees")) {
+            return true;
+        }
 
         String header = request.getHeader("Authorization");
         if (header == null || !header.startsWith("Bearer ")) {
@@ -65,4 +62,3 @@ public class JwtAuthInterceptor implements HandlerInterceptor {
         response.getWriter().write(MAPPER.writeValueAsString(body));
     }
 }
-    

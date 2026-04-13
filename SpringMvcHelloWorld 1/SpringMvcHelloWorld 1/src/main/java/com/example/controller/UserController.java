@@ -2,6 +2,7 @@ package com.example.controller;
 
 import com.example.model.User;
 import com.example.service.UserService;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +35,15 @@ public class UserController {
 
     @GetMapping("/user/login")
     public String showLoginPage() {
-    return "login";
+        return "login";
+    }
+
+    @GetMapping("/employeeForm")
+    public String showEmployeeForm(HttpSession session) {
+        if (session.getAttribute("loggedInUser") == null) {
+            return "redirect:/login";
+        }
+        return "employeeForm";
     }
 
     @PostMapping("/registerUser")
@@ -232,6 +241,4 @@ public class UserController {
         response.put("errors", errors);
         return ResponseEntity.badRequest().body(response);
     }
-
-    
 }

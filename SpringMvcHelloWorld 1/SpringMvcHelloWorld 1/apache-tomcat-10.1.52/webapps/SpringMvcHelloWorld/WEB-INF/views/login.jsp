@@ -79,6 +79,12 @@ footer{
 
 <div class="info-box">
 
+<% if (request.getAttribute("errorMessage") != null) { %>
+    <div class="alert alert-danger text-center">
+        <%= request.getAttribute("errorMessage") %>
+    </div>
+<% } %>
+
 <form action="${pageContext.request.contextPath}/loginUser" method="post">
 
 <div class="mb-3">

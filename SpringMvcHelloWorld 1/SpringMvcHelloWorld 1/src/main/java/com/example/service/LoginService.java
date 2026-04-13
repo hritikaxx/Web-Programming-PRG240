@@ -1,5 +1,7 @@
 package com.example.service;
 
+import com.example.dao.UserDAO;
+import com.example.dto.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -9,16 +11,28 @@ public class LoginService {
 
     private static final Logger logger = LoggerFactory.getLogger(LoginService.class);
 
-    public boolean loginUser(String username, String password) {
+    private final UserDAO userDAO;
+
+    public LoginService(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
+
+    public String loginUser(String username, String password) {
         logger.info("Login attempt for username: {}", username);
 
-        // TODO: replace with real database lookup
-        if (username != null && !username.isBlank() && password != null && !password.isBlank()) {
-            logger.info("Login successful for username: {}", username);
-            return true;
+        UserDTO user = userDAO.findByUsername(username);
+
+        if (user == null) {
+            logger.warn("Username not found: {}", username);
+            return "USERNAME_NOT_FOUND";
         }
 
-        logger.warn("Login failed for username: {}", username);
-        return false;
+        if (!user.getPassword().equals(password)) {
+            logger.warn("Incorrect password for username: {}", username);
+            return "WRONG_PASSWORD";
+        }
+
+        logger.info("Login successful for username: {}", username);
+        return "SUCCESS";
     }
 }

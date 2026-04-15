@@ -4120,3 +4120,20 @@ com.example.controller.LoginController#showLoginPage() mapped.
 2026-04-13 08:52:25 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
 2026-04-13 08:52:45 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
 2026-04-13 08:52:48 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-04-14 13:33:37 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-14 13:33:41 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-14 13:33:41 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-14 13:33:43 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-14 13:33:45 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7989 ms
+2026-04-14 13:34:11 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-14 13:34:12 [http-nio-8080-exec-8] WARN  com.example.service.LoginService - Incorrect password for username: hritika.singh
+2026-04-14 13:34:21 [http-nio-8080-exec-7] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-14 13:34:22 [http-nio-8080-exec-7] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-14 13:34:53 [http-nio-8080-exec-2] INFO  com.example.service.EmployeeService - Registering new employee: name=subhek, email=subhek@bek.com, position=worker
+2026-04-14 13:34:53 [http-nio-8080-exec-2] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 27
+2026-04-14 13:34:53 [http-nio-8080-exec-2] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 27
+2026-04-14 13:34:53 [http-nio-8080-exec-2] INFO  c.e.controller.EmployeeController - Employee created via API: id=27, name=subhek
+2026-04-14 13:35:01 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/max.html
+2026-04-14 13:35:01 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/max.html.
+2026-04-14 13:36:16 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/contact
+2026-04-14 13:36:16 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/contact.

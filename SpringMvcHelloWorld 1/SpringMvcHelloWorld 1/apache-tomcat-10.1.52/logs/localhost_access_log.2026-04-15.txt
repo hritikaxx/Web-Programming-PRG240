@@ -1,0 +1,12 @@
+127.0.0.1 - - [15/Apr/2026:08:40:50 +0545] "POST /SpringMvcHelloWorld/signup HTTP/1.1" 404 758
+127.0.0.1 - - [15/Apr/2026:08:40:51 +0545] "POST /SpringMvcHelloWorld/api/auth/login HTTP/1.1" 401 61
+127.0.0.1 - - [15/Apr/2026:08:40:51 +0545] "POST /SpringMvcHelloWorld/signup HTTP/1.1" 404 758
+127.0.0.1 - - [15/Apr/2026:08:40:51 +0545] "POST /SpringMvcHelloWorld/api/auth/login HTTP/1.1" 401 61
+127.0.0.1 - - [15/Apr/2026:08:40:51 +0545] "POST /SpringMvcHelloWorld/signup HTTP/1.1" 404 758
+127.0.0.1 - - [15/Apr/2026:08:40:52 +0545] "POST /SpringMvcHelloWorld/api/auth/login HTTP/1.1" 401 61
+127.0.0.1 - - [15/Apr/2026:08:40:52 +0545] "POST /SpringMvcHelloWorld/signup HTTP/1.1" 404 758
+127.0.0.1 - - [15/Apr/2026:08:40:52 +0545] "POST /SpringMvcHelloWorld/api/auth/login HTTP/1.1" 401 61
+127.0.0.1 - - [15/Apr/2026:08:40:52 +0545] "POST /SpringMvcHelloWorld/signup HTTP/1.1" 404 758
+127.0.0.1 - - [15/Apr/2026:08:40:52 +0545] "POST /SpringMvcHelloWorld/api/auth/login HTTP/1.1" 401 61
+0:0:0:0:0:0:0:1 - - [15/Apr/2026:08:42:10 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [15/Apr/2026:08:42:10 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 304 -

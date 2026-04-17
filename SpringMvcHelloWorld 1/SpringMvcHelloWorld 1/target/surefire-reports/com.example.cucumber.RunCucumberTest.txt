@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.example.cucumber.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 3.784 s <<< FAILURE! -- in com.example.cucumber.RunCucumberTest
+Employee Registration Form.Successfully register a new employee with valid data -- Time elapsed: 2.137 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed to obtain JWT token. Is the server running? ==> expected: not <null>
+	at com.example.cucumber.EmployeeFormStepDefinitions.setUp(EmployeeFormStepDefinitions.java:75)
+
+Employee Registration Form.Fail to register employee with missing name -- Time elapsed: 0.345 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed to obtain JWT token. Is the server running? ==> expected: not <null>
+	at com.example.cucumber.EmployeeFormStepDefinitions.setUp(EmployeeFormStepDefinitions.java:75)
+
+Employee Registration Form.Fail to register employee with invalid email -- Time elapsed: 0.331 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed to obtain JWT token. Is the server running? ==> expected: not <null>
+	at com.example.cucumber.EmployeeFormStepDefinitions.setUp(EmployeeFormStepDefinitions.java:75)
+
+Employee Registration Form.Fail to register employee with invalid contact number -- Time elapsed: 0.327 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed to obtain JWT token. Is the server running? ==> expected: not <null>
+	at com.example.cucumber.EmployeeFormStepDefinitions.setUp(EmployeeFormStepDefinitions.java:75)
+
+Employee Registration Form.Register multiple employees sequentially -- Time elapsed: 0.418 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed to obtain JWT token. Is the server running? ==> expected: not <null>
+	at com.example.cucumber.EmployeeFormStepDefinitions.setUp(EmployeeFormStepDefinitions.java:75)
+

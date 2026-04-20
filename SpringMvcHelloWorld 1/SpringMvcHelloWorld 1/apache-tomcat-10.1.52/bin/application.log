@@ -4172,3 +4172,833 @@ com.example.controller.LoginController#showLoginPage() mapped.
 2026-04-15 08:40:52 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: testuser
 2026-04-15 08:40:52 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: testuser
 2026-04-15 08:40:52 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 07:48:05 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 07:48:09 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 07:48:09 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 07:48:11 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 07:48:12 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6756 ms
+2026-04-17 07:48:14 [http-nio-8080-exec-1] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-17 07:48:35 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-17 07:48:35 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-17 07:55:58 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:55:58 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:55:58 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:55:58 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:55:58 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:55:58 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:55:59 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:55:59 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:55:59 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:55:59 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:55:59 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:55:59 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:00 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:00 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:00 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:00 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:00 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:00 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:01 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:01 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:01 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:01 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:01 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:02 [http-nio-8080-exec-4] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:02 [http-nio-8080-exec-4] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:02 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:02 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:02 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:03 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:03 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:03 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:03 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:03 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:04 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:04 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:04 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:04 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:04 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:05 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:05 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:06 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:06 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:06 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:06 [http-nio-8080-exec-5] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:06 [http-nio-8080-exec-5] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:56:07 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:56:07 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:56:07 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 07:56:07 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 07:56:07 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 07:58:58 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:58:58 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:58:58 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:58:59 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:58:59 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:58:59 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:58:59 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 07:58:59 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:58:59 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:58:59 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-17 07:59:00 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-17 07:59:00 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 07:59:00 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 07:59:00 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 07:59:00 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-17 07:59:00 [http-nio-8080-exec-8] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-17 07:59:00 [http-nio-8080-exec-8] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-17 08:03:32 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 08:03:37 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 08:03:37 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 08:03:39 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:03:40 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7659 ms
+2026-04-17 08:03:48 [http-nio-8080-exec-3] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-17 08:03:49 [http-nio-8080-exec-3] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-17 08:04:54 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Registering new employee: name=Abiral Khanal, email=abiral@example.com, position=Developer
+2026-04-17 08:04:55 [http-nio-8080-exec-8] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 28
+2026-04-17 08:04:55 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 28
+2026-04-17 08:04:55 [http-nio-8080-exec-8] INFO  c.e.controller.EmployeeController - Employee created via API: id=28, name=Abiral Khanal
+2026-04-17 08:05:21 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Retrieved 16 employees from database
+2026-04-17 08:06:01 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: null
+2026-04-17 08:06:02 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: null
+2026-04-17 08:06:02 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: null
+2026-04-17 08:21:41 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:41 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:41 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:41 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:41 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:41 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:41 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:41 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:42 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:42 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:42 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:42 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:42 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:43 [http-nio-8080-exec-5] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:43 [http-nio-8080-exec-5] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:43 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:43 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:43 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:44 [http-nio-8080-exec-8] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:44 [http-nio-8080-exec-8] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:44 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:44 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:44 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:45 [http-nio-8080-exec-2] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:45 [http-nio-8080-exec-2] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:45 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:45 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:45 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:46 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:46 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:46 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:46 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:46 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:47 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:47 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:47 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:47 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:47 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:48 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:48 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:48 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:48 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:48 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:49 [http-nio-8080-exec-4] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:49 [http-nio-8080-exec-4] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:21:49 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /SpringMvcHelloWorld/signup
+2026-04-17 08:21:49 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /SpringMvcHelloWorld/signup.
+2026-04-17 08:21:49 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-17 08:21:50 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-17 08:21:50 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-17 08:27:41 [Catalina-utility-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 08:27:44 [Catalina-utility-1] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 08:27:45 [Catalina-utility-1] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 08:27:46 [Catalina-utility-1] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:27:47 [Catalina-utility-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5860 ms
+2026-04-17 08:28:00 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 08:28:04 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 08:28:04 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 08:28:05 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:28:07 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6219 ms
+2026-04-17 08:32:53 [Catalina-utility-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 08:32:56 [Catalina-utility-1] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 08:32:56 [Catalina-utility-1] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 08:32:58 [Catalina-utility-1] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:32:59 [Catalina-utility-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5366 ms
+2026-04-17 08:33:09 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-17 08:33:12 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-17 08:33:12 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-17 08:33:14 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:33:15 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5950 ms
+2026-04-18 18:29:40 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-18 18:29:45 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-18 18:29:45 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-18 18:29:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 18:29:49 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8777 ms
+2026-04-18 18:29:58 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:29:58 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:29:58 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:29:58 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:29:58 [http-nio-8080-exec-2] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:29:58 [http-nio-8080-exec-2] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:29:59 [http-nio-8080-exec-4] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:29:59 [http-nio-8080-exec-4] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:29:59 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:29:59 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:00 [http-nio-8080-exec-8] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:00 [http-nio-8080-exec-8] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:00 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:00 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:01 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:01 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:01 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:01 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:02 [http-nio-8080-exec-5] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:02 [http-nio-8080-exec-5] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:02 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:02 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:03 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:03 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:03 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:03 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:04 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:04 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:04 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:04 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:05 [http-nio-8080-exec-2] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:05 [http-nio-8080-exec-2] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:05 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:05 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:06 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:06 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-18 18:30:06 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2026-04-18 18:30:06 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-18 18:30:07 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-18 18:30:07 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 13:29:53 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-19 13:29:56 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-19 13:29:57 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-19 13:29:58 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:29:59 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6513 ms
+2026-04-19 13:39:05 [http-nio-8080-exec-6] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:39:05 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-8] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:39:06 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:39:06 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:39:06 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-2] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:39:07 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:39:07 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-4] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:39:07 [http-nio-8080-exec-4] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:42:33 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: null
+2026-04-19 13:42:33 [http-nio-8080-exec-2] WARN  com.example.service.UserService - Authentication failed for user: null
+2026-04-19 13:42:33 [http-nio-8080-exec-2] WARN  c.example.controller.AuthController - API login failed for user: null
+2026-04-19 13:42:37 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: null
+2026-04-19 13:42:37 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: null
+2026-04-19 13:42:37 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: null
+2026-04-19 13:43:15 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Retrieved 16 employees from database
+2026-04-19 13:43:26 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: null
+2026-04-19 13:43:26 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: null
+2026-04-19 13:43:26 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: null
+2026-04-19 13:43:28 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: null
+2026-04-19 13:43:29 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: null
+2026-04-19 13:43:29 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: null
+2026-04-19 13:43:41 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-04-19 13:44:03 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-04-19 13:44:05 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-04-19 13:44:51 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:44:52 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:44:52 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:45:25 [http-nio-8080-exec-9] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:45:25 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:45:25 [http-nio-8080-exec-8] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:45:25 [http-nio-8080-exec-8] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:45:26 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-2] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:45:26 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:45:26 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:45:26 [http-nio-8080-exec-4] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:45:27 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: testuser
+2026-04-19 13:45:27 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: testuser
+2026-04-19 13:45:27 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: testuser
+2026-04-19 13:56:51 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-19 13:56:55 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-19 13:56:55 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-19 13:56:57 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:56:58 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7012 ms
+2026-04-19 13:57:09 [http-nio-8080-exec-1] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:57:09 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:57:10 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:57:10 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:57:11 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Registering new employee: name=Abiral Khanal, email=abiral@example.com, position=Developer
+2026-04-19 13:57:11 [http-nio-8080-exec-3] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 29
+2026-04-19 13:57:11 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 29
+2026-04-19 13:57:11 [http-nio-8080-exec-3] INFO  c.e.controller.EmployeeController - Employee created via API: id=29, name=Abiral Khanal
+2026-04-19 13:57:11 [http-nio-8080-exec-4] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:57:11 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-7] ERROR c.e.controller.EmployeeController - Validation error while creating employee: [Field error in object 'employee' on field 'name': rejected value [null]; codes [NotBlank.employee.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name]]; default message [Name is required]]
+2026-04-19 13:57:12 [http-nio-8080-exec-6] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:57:12 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-9] ERROR c.e.controller.EmployeeController - Validation error while creating employee: [Field error in object 'employee' on field 'email': rejected value [not-an-email]; codes [Email.employee.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@587453d9,.*]; default message [Email must be a valid email address]]
+2026-04-19 13:57:12 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:57:12 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:57:12 [http-nio-8080-exec-2] ERROR c.e.controller.EmployeeController - Validation error while creating employee: [Field error in object 'employee' on field 'contactNumber': rejected value [12345]; codes [Pattern.employee.contactNumber,Pattern.contactNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.contactNumber,contactNumber]; arguments []; default message [contactNumber],[Ljakarta.validation.constraints.Pattern$Flag;@7815b7cf,^\d{10}$]; default message [Contact number must be exactly 10 digits]]
+2026-04-19 13:57:12 [http-nio-8080-exec-3] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 13:57:12 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 13:57:13 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 13:57:13 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 13:57:13 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Registering new employee: name=Abiral Khanal, email=abiral@example.com, position=Developer
+2026-04-19 13:57:13 [http-nio-8080-exec-5] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 30
+2026-04-19 13:57:13 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 30
+2026-04-19 13:57:13 [http-nio-8080-exec-5] INFO  c.e.controller.EmployeeController - Employee created via API: id=30, name=Abiral Khanal
+2026-04-19 13:57:13 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Registering new employee: name=Jane Smith, email=jane@example.com, position=Manager
+2026-04-19 13:57:13 [http-nio-8080-exec-7] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 31
+2026-04-19 13:57:13 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 31
+2026-04-19 13:57:13 [http-nio-8080-exec-7] INFO  c.e.controller.EmployeeController - Employee created via API: id=31, name=Jane Smith
+2026-04-19 14:01:46 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:46 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:47 [http-nio-8080-exec-10] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:47 [http-nio-8080-exec-10] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:47 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:47 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:47 [http-nio-8080-exec-3] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:47 [http-nio-8080-exec-3] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:48 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:48 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:48 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:48 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:49 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:49 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:49 [http-nio-8080-exec-9] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:49 [http-nio-8080-exec-9] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:50 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:50 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:50 [http-nio-8080-exec-2] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:50 [http-nio-8080-exec-2] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:51 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:51 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:51 [http-nio-8080-exec-5] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:51 [http-nio-8080-exec-5] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:52 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:52 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:52 [http-nio-8080-exec-8] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:52 [http-nio-8080-exec-8] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:53 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:53 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:53 [http-nio-8080-exec-1] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:53 [http-nio-8080-exec-1] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:54 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:54 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:54 [http-nio-8080-exec-4] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:54 [http-nio-8080-exec-4] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:01:55 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-04-19 14:01:55 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: gatlinguser
+2026-04-19 14:01:55 [http-nio-8080-exec-6] WARN  com.example.service.UserService - Authentication failed for user: gatlinguser
+2026-04-19 14:01:55 [http-nio-8080-exec-6] WARN  c.example.controller.AuthController - API login failed for user: gatlinguser
+2026-04-19 14:03:26 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:03:26 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:03:26 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:09:07 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-19 14:09:11 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-19 14:09:11 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-19 14:09:13 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 14:09:14 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6887 ms
+2026-04-19 14:09:58 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:09:58 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:09:58 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:09:58 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Registering new employee: name=Abiral Khanal, email=abiral@example.com, position=Developer
+2026-04-19 14:09:59 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Registering new employee: name=Jane Smith, email=jane@example.com, position=Manager
+2026-04-19 14:09:59 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:09:59 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Registering new employee: name=Bob Johnson, email=bob@example.com, position=Designer
+2026-04-19 14:09:59 [http-nio-8080-exec-4] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 33
+2026-04-19 14:09:59 [http-nio-8080-exec-7] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 34
+2026-04-19 14:09:59 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 34
+2026-04-19 14:09:59 [http-nio-8080-exec-4] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 33
+2026-04-19 14:09:59 [http-nio-8080-exec-7] INFO  c.e.controller.EmployeeController - Employee created via API: id=34, name=Bob Johnson
+2026-04-19 14:09:59 [http-nio-8080-exec-4] INFO  c.e.controller.EmployeeController - Employee created via API: id=33, name=Jane Smith
+2026-04-19 14:10:00 [http-nio-8080-exec-3] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 32
+2026-04-19 14:10:00 [http-nio-8080-exec-3] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 32
+2026-04-19 14:10:00 [http-nio-8080-exec-3] INFO  c.e.controller.EmployeeController - Employee created via API: id=32, name=Abiral Khanal
+2026-04-19 14:10:00 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:00 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:00 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:00 [http-nio-8080-exec-1] INFO  com.example.service.EmployeeService - Registering new employee: name=Alice Williams, email=alice@example.com, position=Tester
+2026-04-19 14:10:01 [http-nio-8080-exec-1] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 35
+2026-04-19 14:10:01 [http-nio-8080-exec-1] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 35
+2026-04-19 14:10:01 [http-nio-8080-exec-1] INFO  c.e.controller.EmployeeController - Employee created via API: id=35, name=Alice Williams
+2026-04-19 14:10:01 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:01 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:01 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:01 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Registering new employee: name=Charlie Brown, email=charlie@example.com, position=DevOps
+2026-04-19 14:10:02 [http-nio-8080-exec-7] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 36
+2026-04-19 14:10:02 [http-nio-8080-exec-7] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 36
+2026-04-19 14:10:02 [http-nio-8080-exec-7] INFO  c.e.controller.EmployeeController - Employee created via API: id=36, name=Charlie Brown
+2026-04-19 14:10:02 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:02 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:02 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:02 [http-nio-8080-exec-6] INFO  com.example.service.EmployeeService - Registering new employee: name=Diana Prince, email=diana@example.com, position=Analyst
+2026-04-19 14:10:03 [http-nio-8080-exec-6] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 37
+2026-04-19 14:10:03 [http-nio-8080-exec-6] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 37
+2026-04-19 14:10:03 [http-nio-8080-exec-6] INFO  c.e.controller.EmployeeController - Employee created via API: id=37, name=Diana Prince
+2026-04-19 14:10:03 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:03 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:03 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:03 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Registering new employee: name=Evan Davis, email=evan@example.com, position=Architect
+2026-04-19 14:10:04 [http-nio-8080-exec-8] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 38
+2026-04-19 14:10:04 [http-nio-8080-exec-8] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 38
+2026-04-19 14:10:04 [http-nio-8080-exec-8] INFO  c.e.controller.EmployeeController - Employee created via API: id=38, name=Evan Davis
+2026-04-19 14:10:04 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:04 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:04 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:04 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Registering new employee: name=Fiona Green, email=fiona@example.com, position=Intern
+2026-04-19 14:10:05 [http-nio-8080-exec-5] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 39
+2026-04-19 14:10:05 [http-nio-8080-exec-5] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 39
+2026-04-19 14:10:05 [http-nio-8080-exec-5] INFO  c.e.controller.EmployeeController - Employee created via API: id=39, name=Fiona Green
+2026-04-19 14:10:05 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:05 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:05 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:05 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Registering new employee: name=George Harris, email=george@example.com, position=Lead
+2026-04-19 14:10:06 [http-nio-8080-exec-9] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 40
+2026-04-19 14:10:06 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 40
+2026-04-19 14:10:06 [http-nio-8080-exec-9] INFO  c.e.controller.EmployeeController - Employee created via API: id=40, name=George Harris
+2026-04-19 14:10:06 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 14:10:06 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 14:10:06 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 14:10:06 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Registering new employee: name=Hannah Lee, email=hannah@example.com, position=Support
+2026-04-19 14:10:07 [http-nio-8080-exec-10] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 41
+2026-04-19 14:10:07 [http-nio-8080-exec-10] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 41
+2026-04-19 14:10:07 [http-nio-8080-exec-10] INFO  c.e.controller.EmployeeController - Employee created via API: id=41, name=Hannah Lee
+2026-04-19 15:53:25 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Retrieved 33 users from database
+2026-04-19 15:53:43 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-19 15:53:43 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 34
+2026-04-19 15:53:43 [http-nio-8080-exec-5] INFO  com.example.service.UserService - User registered successfully with id: 34
+2026-04-19 15:53:43 [http-nio-8080-exec-5] INFO  c.example.controller.UserController - User created via API: id=34, username=hri
+2026-04-19 17:00:48 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-19 17:00:48 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 35
+2026-04-19 17:00:48 [http-nio-8080-exec-9] INFO  com.example.service.UserService - User registered successfully with id: 35
+2026-04-19 17:00:48 [http-nio-8080-exec-9] INFO  c.example.controller.UserController - User created via API: id=35, username=hri
+2026-04-19 17:01:00 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 2
+2026-04-19 17:01:20 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.example.controller.UserController.updateUser(java.lang.Long,com.example.model.User,org.springframework.validation.BindingResult)]
+2026-04-19 17:01:30 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Retrieved 34 users from database
+2026-04-19 17:02:01 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 3
+2026-04-19 17:19:32 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-19 17:19:37 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-19 17:19:38 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-19 17:19:40 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 17:19:41 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9062 ms
+2026-04-19 17:21:36 [http-nio-8080-exec-1] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:36 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:36 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:37 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:37 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:37 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:37 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:38 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Registering new user: fullName=John Doe, email=johndoe@example.com, username=johndoe
+2026-04-19 17:21:38 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 36
+2026-04-19 17:21:38 [http-nio-8080-exec-4] INFO  com.example.service.UserService - User registered successfully with id: 36
+2026-04-19 17:21:38 [http-nio-8080-exec-4] INFO  c.example.controller.UserController - User created via API: id=36, username=johndoe
+2026-04-19 17:21:38 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:38 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:38 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:38 [http-nio-8080-exec-6] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:38 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-7] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-8] ERROR c.example.controller.UserController - Validation error while creating user: [Field error in object 'user' on field 'fullName': rejected value [null]; codes [NotBlank.user.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.fullName,fullName]; arguments []; default message [fullName]]; default message [Full name is required]]
+2026-04-19 17:21:39 [http-nio-8080-exec-9] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:39 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:39 [http-nio-8080-exec-2] ERROR c.example.controller.UserController - Validation error while creating user: [Field error in object 'user' on field 'email': rejected value [not-email]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@409f2c76,.*]; default message [Email must be a valid email address]]
+2026-04-19 17:21:39 [http-nio-8080-exec-3] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:39 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:40 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Retrieved 35 users from database
+2026-04-19 17:21:40 [http-nio-8080-exec-7] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:40 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:41 [http-nio-8080-exec-1] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:41 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:42 [http-nio-8080-exec-4] INFO  com.example.service.UserService - User not found with id: 99999
+2026-04-19 17:21:42 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:42 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-6] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-7] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:43 [http-nio-8080-exec-8] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 3
+2026-04-19 17:21:43 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:43 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:44 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Cannot update - user not found with id: 99999
+2026-04-19 17:21:44 [http-nio-8080-exec-9] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:44 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:45 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Registering new user: fullName=Delete Me, email=deleteme@example.com, username=deleteme
+2026-04-19 17:21:45 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 37
+2026-04-19 17:21:45 [http-nio-8080-exec-7] INFO  com.example.service.UserService - User registered successfully with id: 37
+2026-04-19 17:21:45 [http-nio-8080-exec-7] INFO  c.example.controller.UserController - User created via API: id=37, username=deleteme
+2026-04-19 17:21:45 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 37
+2026-04-19 17:21:46 [http-nio-8080-exec-11] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-19 17:21:46 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:46 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:46 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:46 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:21:46 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:21:46 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:21:47 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Cannot delete - user not found with id: 99999
+2026-04-19 17:28:36 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:36 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:36 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:37 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:37 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:37 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:37 [http-nio-8080-exec-11] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest1@example.com, username=loaduser1
+2026-04-19 17:28:37 [http-nio-8080-exec-11] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 38
+2026-04-19 17:28:37 [http-nio-8080-exec-11] INFO  com.example.service.UserService - User registered successfully with id: 38
+2026-04-19 17:28:37 [http-nio-8080-exec-11] INFO  c.example.controller.UserController - User created via API: id=38, username=loaduser1
+2026-04-19 17:28:38 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:38 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest2@example.com, username=loaduser2
+2026-04-19 17:28:38 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:38 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:38 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 39
+2026-04-19 17:28:38 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User registered successfully with id: 39
+2026-04-19 17:28:38 [http-nio-8080-exec-2] INFO  c.example.controller.UserController - User created via API: id=39, username=loaduser2
+2026-04-19 17:28:39 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:39 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Retrieved 37 users from database
+2026-04-19 17:28:39 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:39 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:39 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest3@example.com, username=loaduser3
+2026-04-19 17:28:39 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 40
+2026-04-19 17:28:39 [http-nio-8080-exec-3] INFO  com.example.service.UserService - User registered successfully with id: 40
+2026-04-19 17:28:39 [http-nio-8080-exec-3] INFO  c.example.controller.UserController - User created via API: id=40, username=loaduser3
+2026-04-19 17:28:39 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Retrieved 38 users from database
+2026-04-19 17:28:40 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:40 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:40 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:40 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest4@example.com, username=loaduser4
+2026-04-19 17:28:40 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 41
+2026-04-19 17:28:40 [http-nio-8080-exec-1] INFO  com.example.service.UserService - User registered successfully with id: 41
+2026-04-19 17:28:40 [http-nio-8080-exec-1] INFO  c.example.controller.UserController - User created via API: id=41, username=loaduser4
+2026-04-19 17:28:40 [http-nio-8080-exec-11] INFO  com.example.service.UserService - Retrieved 39 users from database
+2026-04-19 17:28:41 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:41 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest5@example.com, username=loaduser5
+2026-04-19 17:28:41 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:41 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:41 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 42
+2026-04-19 17:28:41 [http-nio-8080-exec-7] INFO  com.example.service.UserService - User registered successfully with id: 42
+2026-04-19 17:28:41 [http-nio-8080-exec-7] INFO  c.example.controller.UserController - User created via API: id=42, username=loaduser5
+2026-04-19 17:28:41 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 38
+2026-04-19 17:28:42 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Retrieved 40 users from database
+2026-04-19 17:28:42 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:42 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 39
+2026-04-19 17:28:42 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest6@example.com, username=loaduser6
+2026-04-19 17:28:42 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:42 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:42 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 43
+2026-04-19 17:28:42 [http-nio-8080-exec-1] INFO  com.example.service.UserService - User registered successfully with id: 43
+2026-04-19 17:28:42 [http-nio-8080-exec-1] INFO  c.example.controller.UserController - User created via API: id=43, username=loaduser6
+2026-04-19 17:28:42 [http-nio-8080-exec-11] INFO  com.example.service.UserService - Retrieved 40 users from database
+2026-04-19 17:28:42 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 38
+2026-04-19 17:28:43 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:43 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest7@example.com, username=loaduser7
+2026-04-19 17:28:43 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:43 [http-nio-8080-exec-7] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:43 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 39
+2026-04-19 17:28:43 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 44
+2026-04-19 17:28:43 [http-nio-8080-exec-10] INFO  com.example.service.UserService - User registered successfully with id: 44
+2026-04-19 17:28:43 [http-nio-8080-exec-10] INFO  c.example.controller.UserController - User created via API: id=44, username=loaduser7
+2026-04-19 17:28:43 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 40
+2026-04-19 17:28:43 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Retrieved 40 users from database
+2026-04-19 17:28:44 [http-nio-8080-exec-11] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:44 [http-nio-8080-exec-11] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:44 [http-nio-8080-exec-11] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:44 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest8@example.com, username=loaduser8
+2026-04-19 17:28:44 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 41
+2026-04-19 17:28:44 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 45
+2026-04-19 17:28:44 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User registered successfully with id: 45
+2026-04-19 17:28:44 [http-nio-8080-exec-2] INFO  c.example.controller.UserController - User created via API: id=45, username=loaduser8
+2026-04-19 17:28:44 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 42
+2026-04-19 17:28:44 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 40
+2026-04-19 17:28:44 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Retrieved 41 users from database
+2026-04-19 17:28:45 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-19 17:28:45 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest9@example.com, username=loaduser9
+2026-04-19 17:28:45 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-19 17:28:45 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-19 17:28:45 [http-nio-8080-exec-11] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 41
+2026-04-19 17:28:45 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 46
+2026-04-19 17:28:45 [http-nio-8080-exec-9] INFO  com.example.service.UserService - User registered successfully with id: 46
+2026-04-19 17:28:45 [http-nio-8080-exec-9] INFO  c.example.controller.UserController - User created via API: id=46, username=loaduser9
+2026-04-19 17:28:45 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 42
+2026-04-19 17:28:46 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Retrieved 40 users from database
+2026-04-19 17:28:46 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Registering new user: fullName=Load Test User, email=loadtest10@example.com, username=loaduser10
+2026-04-19 17:28:46 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 43
+2026-04-19 17:28:47 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 47
+2026-04-19 17:28:47 [http-nio-8080-exec-6] INFO  com.example.service.UserService - User registered successfully with id: 47
+2026-04-19 17:28:47 [http-nio-8080-exec-6] INFO  c.example.controller.UserController - User created via API: id=47, username=loaduser10
+2026-04-19 17:28:47 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Retrieved 40 users from database
+2026-04-19 17:28:47 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 44
+2026-04-19 17:28:48 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 43
+2026-04-19 17:28:48 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Retrieved 39 users from database
+2026-04-19 17:28:48 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 45
+2026-04-19 17:28:49 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 44
+2026-04-19 17:28:49 [http-nio-8080-exec-11] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 46
+2026-04-19 17:28:50 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 45
+2026-04-19 17:28:50 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 47
+2026-04-19 17:28:51 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 46
+2026-04-19 17:28:52 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 47
+2026-04-20 06:47:27 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-20 06:47:31 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-20 06:47:32 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-20 06:47:34 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 06:47:36 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8673 ms
+2026-04-20 06:48:11 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:11 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:11 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:11 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:12 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Registering new user: fullName=Carol Martinez, email=carol@example.com, username=carolmart
+2026-04-20 06:48:12 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Registering new user: fullName=Alice Johnson, email=alice@example.com, username=alicejohn
+2026-04-20 06:48:12 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Registering new user: fullName=Bob Williams, email=bob@example.com, username=bobwill
+2026-04-20 06:48:12 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 48
+2026-04-20 06:48:12 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 49
+2026-04-20 06:48:12 [http-nio-8080-exec-4] INFO  com.example.service.UserService - User registered successfully with id: 48
+2026-04-20 06:48:12 [http-nio-8080-exec-6] INFO  com.example.service.UserService - User registered successfully with id: 49
+2026-04-20 06:48:12 [http-nio-8080-exec-6] INFO  c.example.controller.UserController - User created via API: id=49, username=carolmart
+2026-04-20 06:48:12 [http-nio-8080-exec-4] INFO  c.example.controller.UserController - User created via API: id=48, username=bobwill
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 50
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  com.example.service.UserService - User registered successfully with id: 50
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  c.example.controller.UserController - User created via API: id=50, username=alicejohn
+2026-04-20 06:48:13 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Retrieved 38 users from database
+2026-04-20 06:48:13 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Retrieved 38 users from database
+2026-04-20 06:48:13 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Retrieved 38 users from database
+2026-04-20 06:48:13 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:13 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:13 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Registering new user: fullName=David Brown, email=david@example.com, username=davidbrown
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 51
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  com.example.service.UserService - User registered successfully with id: 51
+2026-04-20 06:48:13 [http-nio-8080-exec-3] INFO  c.example.controller.UserController - User created via API: id=51, username=davidbrown
+2026-04-20 06:48:13 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 50
+2026-04-20 06:48:13 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 49
+2026-04-20 06:48:13 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 48
+2026-04-20 06:48:14 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Retrieved 39 users from database
+2026-04-20 06:48:14 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 49
+2026-04-20 06:48:14 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 48
+2026-04-20 06:48:14 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 50
+2026-04-20 06:48:14 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:14 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 51
+2026-04-20 06:48:14 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:14 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:14 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Registering new user: fullName=Eva Davis, email=eva@example.com, username=evadavis
+2026-04-20 06:48:14 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 51
+2026-04-20 06:48:15 [http-nio-8080-exec-8] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 52
+2026-04-20 06:48:15 [http-nio-8080-exec-8] INFO  com.example.service.UserService - User registered successfully with id: 52
+2026-04-20 06:48:15 [http-nio-8080-exec-8] INFO  c.example.controller.UserController - User created via API: id=52, username=evadavis
+2026-04-20 06:48:15 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Retrieved 36 users from database
+2026-04-20 06:48:15 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:15 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:15 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:15 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Registering new user: fullName=Frank Wilson, email=frank@example.com, username=frankwils
+2026-04-20 06:48:15 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 52
+2026-04-20 06:48:16 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 52
+2026-04-20 06:48:16 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 53
+2026-04-20 06:48:16 [http-nio-8080-exec-4] INFO  com.example.service.UserService - User registered successfully with id: 53
+2026-04-20 06:48:16 [http-nio-8080-exec-4] INFO  c.example.controller.UserController - User created via API: id=53, username=frankwils
+2026-04-20 06:48:16 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:16 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Retrieved 36 users from database
+2026-04-20 06:48:16 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:16 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:16 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Registering new user: fullName=Grace Taylor, email=grace@example.com, username=gracetay
+2026-04-20 06:48:16 [http-nio-8080-exec-6] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 53
+2026-04-20 06:48:16 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 54
+2026-04-20 06:48:16 [http-nio-8080-exec-10] INFO  com.example.service.UserService - User registered successfully with id: 54
+2026-04-20 06:48:16 [http-nio-8080-exec-10] INFO  c.example.controller.UserController - User created via API: id=54, username=gracetay
+2026-04-20 06:48:17 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 53
+2026-04-20 06:48:17 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Retrieved 37 users from database
+2026-04-20 06:48:17 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:17 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 54
+2026-04-20 06:48:17 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:17 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:17 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Registering new user: fullName=Henry Anderson, email=henry@example.com, username=henryan
+2026-04-20 06:48:17 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 54
+2026-04-20 06:48:18 [http-nio-8080-exec-8] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 55
+2026-04-20 06:48:18 [http-nio-8080-exec-8] INFO  com.example.service.UserService - User registered successfully with id: 55
+2026-04-20 06:48:18 [http-nio-8080-exec-8] INFO  c.example.controller.UserController - User created via API: id=55, username=henryan
+2026-04-20 06:48:18 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Retrieved 36 users from database
+2026-04-20 06:48:18 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:18 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:18 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:18 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Registering new user: fullName=Isla Thomas, email=isla@example.com, username=islathom
+2026-04-20 06:48:18 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 55
+2026-04-20 06:48:18 [http-nio-8080-exec-1] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 56
+2026-04-20 06:48:18 [http-nio-8080-exec-1] INFO  com.example.service.UserService - User registered successfully with id: 56
+2026-04-20 06:48:18 [http-nio-8080-exec-1] INFO  c.example.controller.UserController - User created via API: id=56, username=islathom
+2026-04-20 06:48:18 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 55
+2026-04-20 06:48:19 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Retrieved 37 users from database
+2026-04-20 06:48:19 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:48:19 [http-nio-8080-exec-8] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 56
+2026-04-20 06:48:19 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:48:19 [http-nio-8080-exec-6] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:48:19 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Registering new user: fullName=Jack Jackson, email=jack@example.com, username=jackjack
+2026-04-20 06:48:19 [http-nio-8080-exec-10] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 56
+2026-04-20 06:48:20 [http-nio-8080-exec-5] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 57
+2026-04-20 06:48:20 [http-nio-8080-exec-5] INFO  com.example.service.UserService - User registered successfully with id: 57
+2026-04-20 06:48:20 [http-nio-8080-exec-5] INFO  c.example.controller.UserController - User created via API: id=57, username=jackjack
+2026-04-20 06:48:20 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Retrieved 36 users from database
+2026-04-20 06:48:20 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 57
+2026-04-20 06:48:21 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 57
+2026-04-20 06:50:22 [http-nio-8080-exec-8] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:23 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:23 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:23 [http-nio-8080-exec-6] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:23 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Registering new user: fullName=John Doe, email=johndoe@example.com, username=johndoe
+2026-04-20 06:50:24 [http-nio-8080-exec-2] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 58
+2026-04-20 06:50:24 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User registered successfully with id: 58
+2026-04-20 06:50:24 [http-nio-8080-exec-2] INFO  c.example.controller.UserController - User created via API: id=58, username=johndoe
+2026-04-20 06:50:24 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:24 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:24 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-7] ERROR c.example.controller.UserController - Validation error while creating user: [Field error in object 'user' on field 'fullName': rejected value [null]; codes [NotBlank.user.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.fullName,fullName]; arguments []; default message [fullName]]; default message [Full name is required]]
+2026-04-20 06:50:25 [http-nio-8080-exec-3] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:25 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:25 [http-nio-8080-exec-6] ERROR c.example.controller.UserController - Validation error while creating user: [Field error in object 'user' on field 'email': rejected value [not-email]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@5d56737,.*]; default message [Email must be a valid email address]]
+2026-04-20 06:50:26 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:26 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:26 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Retrieved 36 users from database
+2026-04-20 06:50:26 [http-nio-8080-exec-4] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:26 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-7] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:27 [http-nio-8080-exec-8] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:27 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-6] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:28 [http-nio-8080-exec-2] INFO  com.example.service.UserService - User not found with id: 99999
+2026-04-20 06:50:28 [http-nio-8080-exec-5] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:28 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-7] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 3
+2026-04-20 06:50:29 [http-nio-8080-exec-2] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:29 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:29 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Cannot update - user not found with id: 99999
+2026-04-20 06:50:30 [http-nio-8080-exec-10] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:30 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-5] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:30 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:31 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:31 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:31 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=Delete Me, email=deleteme@example.com, username=deleteme
+2026-04-20 06:50:31 [http-nio-8080-exec-9] INFO  com.example.dao.UserDAOImpl - User inserted successfully with id: 59
+2026-04-20 06:50:31 [http-nio-8080-exec-9] INFO  com.example.service.UserService - User registered successfully with id: 59
+2026-04-20 06:50:31 [http-nio-8080-exec-9] INFO  c.example.controller.UserController - User created via API: id=59, username=deleteme
+2026-04-20 06:50:31 [http-nio-8080-exec-4] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 59
+2026-04-20 06:50:31 [http-nio-8080-exec-7] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/register — redirecting to login
+2026-04-20 06:50:31 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-2] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authenticating user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-3] INFO  com.example.service.UserService - Authentication successful for user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-3] INFO  c.example.controller.AuthController - API login success for user: hritika.singh
+2026-04-20 06:50:32 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Cannot delete - user not found with id: 99999

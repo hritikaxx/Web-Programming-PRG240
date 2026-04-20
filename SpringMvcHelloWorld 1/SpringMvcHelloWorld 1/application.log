@@ -2,3 +2,392 @@
 2026-04-15 08:04:13 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-15 08:39:33 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-15 08:54:29 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 07:44:10 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 07:45:45 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 07:55:47 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-17 07:55:50 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-17 07:55:57 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-17 07:55:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-17 07:55:57 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-17 07:55:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-17 07:55:59 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:55:59 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:00 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:01 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:02 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:03 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:04 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:05 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:05 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@5ac864d7 has finished injecting
+2026-04-17 07:56:05 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-17 07:56:06 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:07 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 07:56:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-17 07:56:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-17 07:56:07 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-17 07:56:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-17 07:56:07 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260417021056338\simulation.log) from employeeformsimulation-20260417021056338
+2026-04-17 07:56:07 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-17 07:56:08 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-17 07:56:08 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-17 07:56:08 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-17 08:01:27 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:01:43 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-17 08:01:45 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-17 08:01:49 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-17 08:01:49 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-17 08:01:49 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-17 08:01:49 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-17 08:01:49 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:50 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:51 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:52 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:53 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:54 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:55 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:56 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@32267567 has finished injecting
+2026-04-17 08:01:57 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-17 08:01:58 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:01:58 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-17 08:01:58 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-17 08:01:58 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-17 08:01:58 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-17 08:01:58 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260417021648531\simulation.log) from employeeformsimulation-20260417021648531
+2026-04-17 08:01:58 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-17 08:01:58 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-17 08:01:58 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-17 08:01:58 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-17 08:21:33 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-17 08:21:35 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-17 08:21:40 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-17 08:21:40 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-17 08:21:40 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-17 08:21:40 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-17 08:21:41 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:42 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:43 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:44 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:45 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:46 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:47 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:48 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:49 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:49 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@76fb262d has finished injecting
+2026-04-17 08:21:49 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-17 08:21:50 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-17 08:21:50 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-17 08:21:50 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-17 08:21:50 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-17 08:21:50 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-17 08:21:50 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260417023639814\simulation.log) from employeeformsimulation-20260417023639814
+2026-04-17 08:21:50 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-17 08:21:50 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-17 08:21:50 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-17 08:21:50 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-17 08:27:18 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-17 08:32:30 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 17:20:03 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 17:45:23 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 17:47:55 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-18 17:47:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-18 17:48:02 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-18 17:48:02 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-18 17:48:02 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-18 17:48:02 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-18 17:48:03 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:03 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:04 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:05 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:06 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:07 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:08 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:09 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:10 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@7c0a476e has finished injecting
+2026-04-18 17:48:10 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-18 17:48:10 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:11 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 17:48:11 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-18 17:48:11 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-18 17:48:11 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-18 17:48:11 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-18 17:48:12 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260418120301290\simulation.log) from employeeformsimulation-20260418120301290
+2026-04-18 17:48:12 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-18 17:48:12 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-18 17:48:12 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-18 17:48:12 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-18 18:28:52 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-18 18:28:54 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-18 18:28:59 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-18 18:28:59 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-18 18:28:59 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-18 18:28:59 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-18 18:28:59 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:00 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:01 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:02 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:03 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:04 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:05 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:06 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@7aa3d66c has finished injecting
+2026-04-18 18:29:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-18 18:29:07 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:08 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:08 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-18 18:29:08 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-18 18:29:08 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-18 18:29:08 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-18 18:29:08 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260418124358001\simulation.log) from employeeformsimulation-20260418124358001
+2026-04-18 18:29:08 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-18 18:29:08 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-18 18:29:08 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-18 18:29:08 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-18 18:29:51 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-18 18:29:52 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-18 18:29:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-18 18:29:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-18 18:29:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-18 18:29:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-18 18:29:59 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:29:59 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:00 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:01 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:02 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:03 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:04 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:05 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:06 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@6371d5a4 has finished injecting
+2026-04-18 18:30:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-18 18:30:07 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-18 18:30:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-18 18:30:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-18 18:30:07 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-18 18:30:07 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-18 18:30:07 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260418124456629\simulation.log) from employeeformsimulation-20260418124456629
+2026-04-18 18:30:07 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-18 18:30:07 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-18 18:30:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-18 18:30:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-19 13:28:22 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:35:31 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:56:04 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:58:59 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 13:59:54 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-19 13:59:55 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-19 13:59:58 [main] ERROR io.gatling.app.Gatling$ - Run crashed
+java.lang.IllegalArgumentException: User defined Simulation class com.example.gatling.EmployeeApiSimulation could not be loaded
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:84)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$4(Selection.scala:88)
+	at scala.Option.orElse(Option.scala:477)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$3(Selection.scala:88)
+	at scala.Option.flatMap(Option.scala:283)
+	at io.gatling.app.Selection$Selector.singleSimulationFromConfig(Selection.scala:87)
+	at io.gatling.app.Selection$Selector.$anonfun$selection$1(Selection.scala:50)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.gatling.app.Selection$Selector.selection(Selection.scala:42)
+	at io.gatling.app.Selection$.apply(Selection.scala:35)
+	at io.gatling.app.Runner.run(Runner.scala:53)
+	at io.gatling.app.Gatling$.start(Gatling.scala:92)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:54)
+	at io.gatling.app.Gatling$.main(Gatling.scala:42)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.gatling.plugin.util.ForkMain.runMain(ForkMain.java:67)
+	at io.gatling.plugin.util.ForkMain.main(ForkMain.java:35)
+Caused by: java.lang.ClassNotFoundException: com.example.gatling.EmployeeApiSimulation
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:463)
+	at java.base/java.lang.Class.forName(Class.java:454)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$2(Selection.scala:73)
+	at scala.util.Try$.apply(Try.scala:217)
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:73)
+	... 18 common frames omitted
+2026-04-19 13:59:58 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-19 14:01:40 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-19 14:01:41 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-19 14:01:46 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-19 14:01:46 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-19 14:01:46 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-19 14:01:46 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-19 14:01:47 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:47 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:48 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:49 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:50 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:51 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:52 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:53 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:54 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@4a7e1b00 has finished injecting
+2026-04-19 14:01:54 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-19 14:01:54 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:55 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Submit Employee Form' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-19 14:01:55 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-19 14:01:55 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-19 14:01:55 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-19 14:01:55 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-19 14:01:55 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260419081644961\simulation.log) from employeeformsimulation-20260419081644961
+2026-04-19 14:01:56 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-19 14:01:56 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 53 lines
+2026-04-19 14:01:56 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-19 14:01:56 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 53 lines
+2026-04-19 14:05:44 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 14:09:52 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-19 14:09:53 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-19 14:09:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-19 14:09:57 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-19 14:09:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-19 14:09:57 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-19 14:10:05 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@315c0901 has finished injecting
+2026-04-19 14:10:05 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-19 14:10:07 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-19 14:10:07 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-19 14:10:07 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-19 14:10:07 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-19 14:10:07 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260419082456759\simulation.log) from employeeformsimulation-20260419082456759
+2026-04-19 14:10:07 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-19 14:10:07 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 43 lines
+2026-04-19 14:10:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-19 14:10:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 43 lines
+2026-04-19 17:18:41 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 17:20:37 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-19 17:22:16 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-19 17:22:18 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-19 17:22:23 [main] ERROR io.gatling.app.Gatling$ - Run crashed
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.gatling.app.SimulationClass$Java.params(SimulationClass.scala:35)
+	at io.gatling.app.Runner.load(Runner.scala:72)
+	at io.gatling.app.Runner.run(Runner.scala:57)
+	at io.gatling.app.Gatling$.start(Gatling.scala:92)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:54)
+	at io.gatling.app.Gatling$.main(Gatling.scala:42)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.gatling.plugin.util.ForkMain.runMain(ForkMain.java:67)
+	at io.gatling.plugin.util.ForkMain.main(ForkMain.java:35)
+Caused by: io.gatling.core.session.el.ElParserException: Failed to parse {"fullName":"Load Test User","email":"loadtest#{__threadNumber()}@example.com","username":"loaduser#{__threadNumber()}","password":"loadpass123"} with error 'string matching regex '[^.#{}()]+' expected but ')' found'
+	at io.gatling.core.session.el.ElCompiler.io$gatling$core$session$el$ElCompiler$$parseEl(ElCompiler.scala:393)
+	at io.gatling.core.session.el.ElCompiler$.parse(ElCompiler.scala:336)
+	at io.gatling.core.body.ElBody$.toParts(Body.scala:60)
+	at io.gatling.core.body.ElBody$.apply(Body.scala:66)
+	at io.gatling.core.body.BodySupport.StringBody(BodySupport.scala:32)
+	at io.gatling.core.body.BodySupport.StringBody$(BodySupport.scala:31)
+	at io.gatling.core.Predef$.StringBody(Predef.scala:23)
+	at io.gatling.core.Predef.StringBody(Predef.scala)
+	at io.gatling.javaapi.core.CoreDsl.StringBody(CoreDsl.java:3731)
+	at com.example.gatling.UserCrudSimulation.<init>(UserCrudSimulation.java:51)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 13 common frames omitted
+2026-04-19 17:22:23 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-19 17:28:29 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-19 17:28:30 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-19 17:28:35 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-19 17:28:35 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-19 17:28:35 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-19 17:28:36 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-19 17:28:44 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@ae41b9c has finished injecting
+2026-04-19 17:28:44 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-19 17:28:52 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario User CRUD Operations are stopped
+2026-04-19 17:28:52 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-19 17:28:52 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-19 17:28:52 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-19 17:28:52 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usercrudsimulation-20260419114334474\simulation.log) from usercrudsimulation-20260419114334474
+2026-04-19 17:28:52 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-19 17:28:52 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-19 17:28:52 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-19 17:28:52 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-20 06:43:15 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 06:45:00 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 06:45:51 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-20 06:45:52 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-20 06:45:56 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-20 06:45:56 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-20 06:45:56 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-20 06:45:57 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-20 06:45:57 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:57 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:57 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:57 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:57 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:45:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:45:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:05 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@115f4771 has finished injecting
+2026-04-20 06:46:05 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-20 06:46:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-20 06:46:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-20 06:46:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario User CRUD Operations are stopped
+2026-04-20 06:46:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-20 06:46:06 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-20 06:46:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-20 06:46:06 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usercrudsimulation-20260420010055960\simulation.log) from usercrudsimulation-20260420010055960
+2026-04-20 06:46:06 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-20 06:46:06 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-20 06:46:06 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-20 06:46:06 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-20 06:48:03 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-20 06:48:05 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-20 06:48:10 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-20 06:48:10 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-20 06:48:10 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-20 06:48:10 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-20 06:48:18 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@1f644293 has finished injecting
+2026-04-20 06:48:18 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-20 06:48:21 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario User CRUD Operations are stopped
+2026-04-20 06:48:21 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-20 06:48:21 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-20 06:48:21 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-20 06:48:21 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usercrudsimulation-20260420010309476\simulation.log) from usercrudsimulation-20260420010309476
+2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines

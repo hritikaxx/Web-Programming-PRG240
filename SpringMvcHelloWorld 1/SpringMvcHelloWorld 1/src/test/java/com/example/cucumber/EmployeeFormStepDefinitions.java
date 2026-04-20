@@ -33,9 +33,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EmployeeFormStepDefinitions {
 
     private static final String BASE_URL = "http://localhost:8080/SpringMvcHelloWorld";
-    private static final String TEST_USERNAME = "testuser";
-    private static final String TEST_PASSWORD = "testpass123";
-    private static final String TEST_EMAIL = "testuser@example.com";
+        private static final String TEST_USERNAME = "hritika.singh";   
+        private static final String TEST_PASSWORD = "12345678";         
+        private static final String TEST_EMAIL = "hritika@example.com"; 
 
     private final HttpClient httpClient = HttpClient.newHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
@@ -52,7 +52,7 @@ public class EmployeeFormStepDefinitions {
         String signupPayload = String.format(
                 "username=%s&password=%s&email=%s", TEST_USERNAME, TEST_PASSWORD, TEST_EMAIL);
         HttpRequest signupRequest = HttpRequest.newBuilder()
-                .uri(URI.create(BASE_URL + "/signup"))
+                .uri(URI.create(BASE_URL + "/register"))
                 .header("Content-Type", "application/x-www-form-urlencoded")
                 .POST(HttpRequest.BodyPublishers.ofString(signupPayload))
                 .build();

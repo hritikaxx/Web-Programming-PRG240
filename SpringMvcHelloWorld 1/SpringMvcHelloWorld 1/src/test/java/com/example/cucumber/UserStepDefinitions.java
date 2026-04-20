@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * Prerequisites: Application must be running on localhost:8080.
  */
-public class UserCrudStepDefinitions {
+public class UserStepDefinitions {
 
     private static final String BASE_URL = "http://localhost:8080/SpringMvcHelloWorld";
     private static final String ADMIN_USERNAME = "hritika.singh";

@@ -20,7 +20,7 @@ import static io.gatling.javaapi.http.HttpDsl.*;
  * Run with:
  * mvn clean gatling:test "-Dgatling.simulationClass=com.example.gatling.UserCrudSimulation"
  */
-public class UserCrudSimulation extends Simulation {
+public class UserSimulation extends Simulation {
 
     // Predefined user data — each virtual user picks the next row
     private static final String[][] USER_DATA = {
@@ -36,13 +36,12 @@ public class UserCrudSimulation extends Simulation {
             {"Jack Jackson",    "jack@example.com",    "jackjack",    "pass1234"},
     };
 
-    // HTTP protocol configuration
+
     HttpProtocolBuilder httpProtocol = http
             .baseUrl("http://localhost:8080/SpringMvcHelloWorld")
             .acceptHeader("application/json")
             .contentTypeHeader("application/json");
 
-    // Build a feeder (data source) from the predefined array
     Iterator<Map<String, Object>> userFeeder = new Iterator<>() {
         private int index = 0;
 

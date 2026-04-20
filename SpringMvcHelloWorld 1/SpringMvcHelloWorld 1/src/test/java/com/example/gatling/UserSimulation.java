@@ -10,7 +10,7 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
 
 /**
- * Gatling performance simulation for User CRUD operations.
+ * Gatling performance simulation for User operations.
  *
  * Tests Create, Read, Update, and Delete operations
  * for the User API under load with 10 concurrent users.
@@ -18,7 +18,7 @@ import static io.gatling.javaapi.http.HttpDsl.*;
  * Prerequisites: Application must be running on localhost:8080.
  *
  * Run with:
- * mvn clean gatling:test "-Dgatling.simulationClass=com.example.gatling.UserCrudSimulation"
+ * mvn clean gatling:test "-Dgatling.simulationClass=com.example.gatling.UserSimulation"
  */
 public class UserSimulation extends Simulation {
 
@@ -60,8 +60,8 @@ public class UserSimulation extends Simulation {
         }
     };
 
-    // Scenario: login, then perform full CRUD on users
-    ScenarioBuilder userCrudScenario = scenario("User CRUD Operations")
+    // Scenario: login, then perform full on users
+    ScenarioBuilder userScenario = scenario("User Operations")
 
             // Step 1: Login with existing user to get JWT token
             .exec(
@@ -133,7 +133,7 @@ public class UserSimulation extends Simulation {
     // Load profile: ramp up 10 users over 10 seconds
     {
         setUp(
-                userCrudScenario.injectOpen(
+                userScenario.injectOpen(
                         rampUsers(10).during(10)
                 )
         ).protocols(httpProtocol)

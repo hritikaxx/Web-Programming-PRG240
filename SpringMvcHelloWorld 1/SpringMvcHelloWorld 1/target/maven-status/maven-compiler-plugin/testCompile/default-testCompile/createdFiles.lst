@@ -1,9 +1,9 @@
-com\example\cucumber\UserCrudStepDefinitions.class
-com\example\gatling\UserCrudSimulation$1.class
 com\example\cucumber\RunCucumberTest.class
+com\example\gatling\UserSimulation.class
 com\example\model\EmployeeValidationTest.class
 com\example\gatling\EmployeeFormSimulation.class
-com\example\cucumber\RunUserCrudTest.class
 com\example\gatling\EmployeeFormSimulation$1.class
-com\example\gatling\UserCrudSimulation.class
+com\example\cucumber\UserStepDefinitions.class
+com\example\gatling\UserSimulation$1.class
+com\example\cucumber\RunUserTest.class
 com\example\cucumber\EmployeeFormStepDefinitions.class

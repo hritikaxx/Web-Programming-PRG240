@@ -391,3 +391,74 @@ Caused by: io.gatling.core.session.el.ElParserException: Failed to parse {"fullN
 2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
 2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
 2026-04-20 06:48:21 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-20 08:05:16 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 08:06:44 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-20 08:06:46 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-20 08:06:50 [main] ERROR io.gatling.app.Gatling$ - Run crashed
+java.lang.IllegalArgumentException: User defined Simulation class com.example.gatling.UserCrudSimulation could not be loaded
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:84)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$4(Selection.scala:88)
+	at scala.Option.orElse(Option.scala:477)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$3(Selection.scala:88)
+	at scala.Option.flatMap(Option.scala:283)
+	at io.gatling.app.Selection$Selector.singleSimulationFromConfig(Selection.scala:87)
+	at io.gatling.app.Selection$Selector.$anonfun$selection$1(Selection.scala:50)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.gatling.app.Selection$Selector.selection(Selection.scala:42)
+	at io.gatling.app.Selection$.apply(Selection.scala:35)
+	at io.gatling.app.Runner.run(Runner.scala:53)
+	at io.gatling.app.Gatling$.start(Gatling.scala:92)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:54)
+	at io.gatling.app.Gatling$.main(Gatling.scala:42)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.gatling.plugin.util.ForkMain.runMain(ForkMain.java:67)
+	at io.gatling.plugin.util.ForkMain.main(ForkMain.java:35)
+Caused by: java.lang.ClassNotFoundException: com.example.gatling.UserCrudSimulation
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:463)
+	at java.base/java.lang.Class.forName(Class.java:454)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$2(Selection.scala:73)
+	at scala.util.Try$.apply(Try.scala:217)
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:73)
+	... 18 common frames omitted
+2026-04-20 08:06:50 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-20 08:10:45 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 08:12:12 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-20 08:12:13 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-20 08:12:17 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-20 08:12:17 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-20 08:12:17 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-20 08:12:17 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-20 08:12:25 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@70b95942 has finished injecting
+2026-04-20 08:12:25 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-20 08:12:28 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-20 08:12:28 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-20 08:12:28 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-20 08:12:28 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-20 08:12:28 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260420022716693\simulation.log) from usersimulation-20260420022716693
+2026-04-20 08:12:28 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-20 08:12:29 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-20 08:12:29 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-20 08:12:29 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-20 08:35:08 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-20 08:35:54 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-20 08:35:56 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-20 08:36:00 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-20 08:36:00 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-20 08:36:00 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-20 08:36:00 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-20 08:36:09 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@3d1b03f8 has finished injecting
+2026-04-20 08:36:09 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-20 08:36:10 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario Register Employee are stopped
+2026-04-20 08:36:10 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-20 08:36:10 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-20 08:36:10 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-20 08:36:10 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\employeeformsimulation-20260420025059375\simulation.log) from employeeformsimulation-20260420025059375
+2026-04-20 08:36:10 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-20 08:36:10 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 43 lines
+2026-04-20 08:36:10 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-20 08:36:10 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 43 lines

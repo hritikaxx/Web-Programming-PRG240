@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.cucumber.RunUserCrudTest
--------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.82 s -- in com.example.cucumber.RunUserCrudTest

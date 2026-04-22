@@ -1,0 +1,46 @@
+22-Apr-2026 06:58:25.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+22-Apr-2026 06:58:25.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+22-Apr-2026 06:58:25.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+22-Apr-2026 06:58:25.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+22-Apr-2026 06:58:25.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+22-Apr-2026 06:58:25.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+22-Apr-2026 06:58:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+22-Apr-2026 06:58:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+22-Apr-2026 06:58:25.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+22-Apr-2026 06:58:25.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52
+22-Apr-2026 06:58:25.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52
+22-Apr-2026 06:58:26.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\conf\logging.properties
+22-Apr-2026 06:58:26.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Apr-2026 06:58:26.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+22-Apr-2026 06:58:26.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Apr-2026 06:58:26.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+22-Apr-2026 06:58:26.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Apr-2026 06:58:26.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+22-Apr-2026 06:58:26.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+22-Apr-2026 06:58:26.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+22-Apr-2026 06:58:26.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Apr-2026 06:58:26.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Apr-2026 06:58:26.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52
+22-Apr-2026 06:58:26.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52
+22-Apr-2026 06:58:26.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\temp
+22-Apr-2026 06:58:26.040 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.12] using APR version [1.7.6].
+22-Apr-2026 06:58:26.086 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.4 30 Sep 2025]
+22-Apr-2026 06:58:26.702 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+22-Apr-2026 06:58:26.749 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1199] milliseconds
+22-Apr-2026 06:58:26.852 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+22-Apr-2026 06:58:26.853 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+22-Apr-2026 06:58:26.918 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+22-Apr-2026 06:58:33.529 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Apr-2026 06:58:43.884 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [16,967] ms
+22-Apr-2026 06:58:43.884 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\docs]
+22-Apr-2026 06:58:43.992 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\docs] has finished in [108] ms
+22-Apr-2026 06:58:43.992 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\examples]
+22-Apr-2026 06:58:45.502 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\examples] has finished in [1,510] ms
+22-Apr-2026 06:58:45.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\host-manager]
+22-Apr-2026 06:58:45.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\host-manager] has finished in [239] ms
+22-Apr-2026 06:58:45.753 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\manager]
+22-Apr-2026 06:58:45.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\manager] has finished in [106] ms
+22-Apr-2026 06:58:45.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\ROOT]
+22-Apr-2026 06:58:45.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\apache-tomcat-10.1.52\webapps\ROOT] has finished in [69] ms
+22-Apr-2026 06:58:45.938 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Apr-2026 06:58:45.994 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [19242] milliseconds

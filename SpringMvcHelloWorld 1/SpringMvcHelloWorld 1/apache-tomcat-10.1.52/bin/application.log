@@ -5404,3 +5404,8 @@ com.example.controller.LoginController#showLoginPage() mapped.
 2026-04-20 08:36:10 [http-nio-8080-exec-9] INFO  com.example.dao.EmployeeDAOImpl - Employee inserted successfully with id: 54
 2026-04-20 08:36:10 [http-nio-8080-exec-9] INFO  com.example.service.EmployeeService - Employee registered successfully with id: 54
 2026-04-20 08:36:10 [http-nio-8080-exec-9] INFO  c.e.controller.EmployeeController - Employee created via API: id=54, name=Hannah Lee
+2026-04-22 06:58:35 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-22 06:58:40 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-22 06:58:40 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-22 06:58:42 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-22 06:58:43 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8733 ms

@@ -3,12 +3,15 @@ com\example\controller\LoginController.class
 com\example\dao\EmployeeDAOImpl.class
 com\example\service\EmployeeService.class
 com\example\model\Employee.class
+com\example\controller\PetController.class
+com\example\model\Pet.class
 com\example\controller\EmployeeController.class
 com\example\controller\UserController.class
 com\example\model\Login.class
 com\example\dao\UserDAOImpl.class
 com\example\dto\EmployeeDTO.class
 com\example\security\JwtUtil.class
+com\example\dao\PetDAO.class
 com\example\service\UserService.class
 com\example\controller\HelloController.class
 com\example\security\JwtAuthInterceptor.class

@@ -17,14 +17,6 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Cucumber step definitions for User CRUD operations.
- *
- * Covers Create, Read, Update, and Delete operations
- * for the User API at /api/users.
- *
- * Prerequisites: Application must be running on localhost:8080.
- */
 public class UserStepDefinitions {
 
     private static final String BASE_URL = "http://localhost:8080/SpringMvcHelloWorld";

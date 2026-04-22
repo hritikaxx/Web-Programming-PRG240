@@ -35,18 +35,9 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
-              <ul class="dropdown-menu dropdown-menu-end">
-               <c:choose>
-                <c:when test="${not empty user}">
-                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/addPet">+ Add Pet</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">Logout (${user})</a></li>
-              </c:when>
-              <c:otherwise>
-                 <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
-                 <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
-              </c:otherwise>
-              </c:choose>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
+              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
             </ul>
           </li>
         </ul>

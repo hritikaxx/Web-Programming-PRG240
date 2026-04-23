@@ -5628,3 +5628,76 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2026-04-23 18:00:41 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 1 pets from database
 2026-04-23 18:00:47 [http-nio-8080-exec-6] INFO  com.example.service.PetService - Retrieved 1 pets from database
 2026-04-23 18:00:54 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:17:50 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 18:17:53 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 18:17:54 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 18:17:54 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 18:17:56 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 18:17:57 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7466 ms
+2026-04-23 18:18:12 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:18:48 [http-nio-8080-exec-7] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 18:18:48 [http-nio-8080-exec-7] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 18:19:13 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=1
+2026-04-23 18:19:14 [http-nio-8080-exec-1] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 2
+2026-04-23 18:19:14 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Pet added successfully with id: 2
+2026-04-23 18:19:14 [http-nio-8080-exec-4] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 18:38:57 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 18:39:02 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 18:39:03 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 18:39:03 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 18:39:05 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 18:39:07 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10538 ms
+2026-04-23 18:39:14 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 20:34:52 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 20:34:56 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 20:34:56 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 20:34:56 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 20:34:58 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 20:34:59 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7069 ms
+2026-04-23 20:35:03 [http-nio-8080-exec-5] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 20:35:22 [http-nio-8080-exec-6] INFO  com.example.dao.PetDAOImpl - Pet deleted with id: 1
+2026-04-23 20:35:27 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 20:35:34 [http-nio-8080-exec-5] INFO  com.example.dao.PetDAOImpl - Pet deleted with id: 2
+2026-04-23 20:35:38 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 20:38:10 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 20:38:14 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 20:38:15 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 20:38:15 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 20:38:17 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 20:38:18 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7502 ms
+2026-04-23 20:38:23 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 20:45:31 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 20:45:34 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 20:45:35 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 20:45:35 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 20:45:36 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 20:45:38 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7076 ms
+2026-04-23 20:45:40 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 20:46:17 [http-nio-8080-exec-4] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 20:46:18 [http-nio-8080-exec-4] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 20:46:54 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=12
+2026-04-23 20:46:54 [http-nio-8080-exec-8] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 3
+2026-04-23 20:46:54 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Pet added successfully with id: 3
+2026-04-23 20:46:55 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 20:47:04 [http-nio-8080-exec-5] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 20:47:28 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=36
+2026-04-23 20:47:28 [http-nio-8080-exec-10] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 4
+2026-04-23 20:47:28 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Pet added successfully with id: 4
+2026-04-23 20:47:29 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 20:47:32 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 20:59:08 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 20:59:12 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 20:59:12 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 20:59:12 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 20:59:14 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 20:59:15 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7284 ms
+2026-04-23 20:59:20 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-23 20:59:43 [http-nio-8080-exec-8] INFO  com.example.dao.PetDAOImpl - Pet deleted with id: 3
+2026-04-23 20:59:48 [http-nio-8080-exec-9] INFO  com.example.dao.PetDAOImpl - Pet deleted with id: 4
+2026-04-23 20:59:53 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 21:00:12 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 21:00:12 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 21:00:26 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=12
+2026-04-23 21:00:26 [http-nio-8080-exec-8] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 5
+2026-04-23 21:00:26 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Pet added successfully with id: 5
+2026-04-23 21:00:27 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Retrieved 1 pets from database

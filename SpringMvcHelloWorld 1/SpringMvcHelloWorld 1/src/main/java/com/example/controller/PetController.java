@@ -96,7 +96,7 @@ public class PetController {
             try {
                 String uploadDir = session.getServletContext().getRealPath("/uploads/pets");
                 if (uploadDir == null) {
-                    uploadDir = "uploads/pets";
+                    uploadDir = Paths.get("uploads", "pets").toAbsolutePath().toString();
                 }
                 Path uploadPath = Paths.get(uploadDir);
                 if (!Files.exists(uploadPath)) {
@@ -146,6 +146,52 @@ public class PetController {
             response.put("status", "error");
             response.put("message", "Failed to retrieve pets");
             return ResponseEntity.status(500).body(response);
+        }
+    }
+
+    @DeleteMapping("/api/pets/{id}")
+    @ResponseBody
+    public ResponseEntity<?> deletePetApi(@PathVariable("id") Long id, HttpSession session) {
+        Pet pet = petService.getPetById(id);
+        if (pet == null) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "error");
+            response.put("message", "Pet not found");
+            return ResponseEntity.status(404).body(response);
+        }
+
+        boolean deleted = petService.deletePet(id);
+        if (deleted) {
+            deletePetImageFile(pet.getImagePath(), session);
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "success");
+            response.put("message", "Pet deleted successfully");
+            return ResponseEntity.ok(response);
+        }
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("status", "error");
+        response.put("message", "Failed to delete pet");
+        return ResponseEntity.status(500).body(response);
+    }
+
+    private void deletePetImageFile(String imagePath, HttpSession session) {
+        if (imagePath == null || imagePath.trim().isEmpty()) {
+            return;
+        }
+        try {
+            String realPath = session.getServletContext().getRealPath("/" + imagePath);
+            Path filePath;
+            if (realPath != null) {
+                filePath = Paths.get(realPath);
+            } else {
+                filePath = Paths.get("uploads").resolve(imagePath.replaceFirst("^uploads/", ""));
+            }
+            if (Files.exists(filePath)) {
+                Files.delete(filePath);
+            }
+        } catch (IOException e) {
+            logger.warn("Unable to delete image file: {}", imagePath, e);
         }
     }
 }

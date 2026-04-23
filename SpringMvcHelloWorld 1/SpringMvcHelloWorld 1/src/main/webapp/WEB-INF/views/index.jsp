@@ -25,6 +25,11 @@
           <li class="nav-item">
             <a class="nav-link px-3" href="${pageContext.request.contextPath}/">Home</a>
           </li>
+          <c:if test="${not empty sessionScope.loggedInUser}">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="${pageContext.request.contextPath}/addPet">Add Pet</a>
+            </li>
+          </c:if>
           <li class="nav-item dropdown">
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Adopt</a>
             <ul class="dropdown-menu">
@@ -79,7 +84,7 @@
     <div class="container">
       <h2 class="text-center mb-5">Pets Available for Adoption</h2>
 
-      <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center">
         <!-- Original static pets remain here -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
@@ -183,8 +188,11 @@
         </div>
       </div>
 
-      <div class="row g-4 justify-content-center" id="petsContainer">
-        <!-- New pets added by users will appear here -->
+      <div class="row gx-4 gy-4 justify-content-center align-items-stretch" id="petsContainer">
+        <!-- Pets added by users will appear here -->
+      </div>
+      <div id="noPetsMessage" class="text-center mt-4" style="display: none; color: #6c757d;">
+        <p class="mb-0">No pets available right now. Add a new pet after logging in.</p>
       </div>
     </div>
   </section>
@@ -240,7 +248,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Load pets from API
     function loadPets() {
       fetch('${pageContext.request.contextPath}/api/pets')
         .then(response => response.json())
@@ -256,29 +263,26 @@
         });
     }
 
-    function getPetPersonality(type) {
-      if (!type) {
-        return 'Friendly, gentle';
-      }
-      const lower = type.toLowerCase();
-      if (lower.includes('cat')) {
-        return 'Calm, affectionate';
-      }
-      if (lower.includes('dog') || lower.includes('husky') || lower.includes('labrador') || lower.includes('mixed')) {
-        return 'Playful, loyal';
-      }
-      return 'Friendly, gentle';
-    }
-
     function displayPets(pets) {
       const container = document.getElementById('petsContainer');
+      const noPetsMessage = document.getElementById('noPetsMessage');
       container.innerHTML = '';
 
+      if (!Array.isArray(pets) || pets.length === 0) {
+        if (noPetsMessage) {
+          noPetsMessage.style.display = 'block';
+        }
+        return;
+      }
+
+      if (noPetsMessage) {
+        noPetsMessage.style.display = 'none';
+      }
       pets.forEach(pet => {
         const imageSrc = pet.imagePath ? '${pageContext.request.contextPath}/' + pet.imagePath : 'https://via.placeholder.com/300x300?text=No+Image';
         const plural = pet.age != 1 ? 's' : '';
         const petCard =
-          '<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">' +
+          '<div class="col-12 col-md-6 col-lg-4 px-2">' +
             '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
               '<img src="' + imageSrc + '" ' +
                    'class="card-img-top" ' +
@@ -299,11 +303,9 @@
     }
 
     function viewPetDetails(petId) {
-      // For now, just alert. Can be expanded to show modal or redirect
       alert('Pet details for ID: ' + petId);
     }
 
-    // Load pets when page loads
     document.addEventListener('DOMContentLoaded', loadPets);
   </script>
 

@@ -39,7 +39,7 @@
 
     <!-- Serve static resources (CSS, JS, images) from /resources/ URL path -->
     <mvc:resources mapping="/css/**" location="/css/"/>
-    <mvc:resources mapping="/uploads/**" location="/uploads/,file:uploads/"/>
+    <mvc:resources mapping="/uploads/**" location="/uploads/"/>
 
     <!-- H2 DataSource - file-based database for persistence across restarts -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

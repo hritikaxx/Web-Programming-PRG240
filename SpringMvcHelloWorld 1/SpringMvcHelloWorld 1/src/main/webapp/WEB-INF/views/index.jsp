@@ -188,7 +188,7 @@
         </div>
       </div>
 
-      <div class="row gx-4 gy-4 justify-content-center align-items-stretch" id="petsContainer">
+      <div class="row g-4 justify-content-center" id="petsContainer">
         <!-- Pets added by users will appear here -->
       </div>
       <div id="noPetsMessage" class="text-center mt-4" style="display: none; color: #6c757d;">
@@ -282,19 +282,21 @@
         const imageSrc = pet.imagePath ? '${pageContext.request.contextPath}/' + pet.imagePath : 'https://via.placeholder.com/300x300?text=No+Image';
         const plural = pet.age != 1 ? 's' : '';
         const petCard =
-          '<div class="col-12 col-md-6 col-lg-4 px-2">' +
+          '<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">' +
             '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
-              '<img src="' + imageSrc + '" ' +
-                   'class="card-img-top" ' +
-                   'style="width:100%; height:300px; object-fit:cover; object-position:center top; border-bottom: 3px solid #e8d5c2;" ' +
-                   'alt="' + pet.name + ' the ' + pet.type + '">' +
+              '<a href="#" onclick="viewPetDetails(' + pet.id + ')">' +
+                '<img src="' + imageSrc + '" ' +
+                     'class="card-img-top" ' +
+                     'style="width:100%; height:300px; object-fit:cover; object-position:center top; border-bottom: 3px solid #e8d5c2;" ' +
+                     'alt="' + pet.name + ' the ' + pet.type + '">' +
+              '</a>' +
               '<div class="card-body d-flex flex-column p-3">' +
                 '<h5 class="card-title fw-semibold mb-1">' + pet.name + '</h5>' +
                 '<ul class="list-unstyled mb-2 small">' +
                   '<li><b>Age:</b> ' + pet.age + ' Year' + plural + '</li>' +
                   '<li><b>Breed:</b> ' + pet.type + '</li>' +
                 '</ul>' +
-                '<button class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</button>' +
+                '<a href="#" class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</a>' +
               '</div>' +
             '</div>' +
           '</div>';

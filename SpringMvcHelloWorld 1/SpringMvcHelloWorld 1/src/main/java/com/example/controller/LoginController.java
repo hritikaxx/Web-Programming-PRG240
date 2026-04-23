@@ -65,7 +65,7 @@ public class LoginController {
             }
 
             session.setAttribute("loggedInUser", username);
-            return "redirect:/employeeForm";
+            return "redirect:/addPet";
 
         } catch (Exception e) {
             logger.error("Error during login for username {}: {}", username, e.getMessage(), e);

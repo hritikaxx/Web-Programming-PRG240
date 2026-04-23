@@ -4,3 +4,5 @@
 0:0:0:0:0:0:0:1 - - [22/Apr/2026:07:11:42 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
 0:0:0:0:0:0:0:1 - - [22/Apr/2026:07:36:25 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 500 11031
 0:0:0:0:0:0:0:1 - - [22/Apr/2026:07:36:25 +0545] "GET /favicon.ico HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Apr/2026:08:27:21 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 10863
+0:0:0:0:0:0:0:1 - - [22/Apr/2026:08:27:21 +0545] "GET /SpringMvcHelloWorld/css/paws.css HTTP/1.1" 304 -

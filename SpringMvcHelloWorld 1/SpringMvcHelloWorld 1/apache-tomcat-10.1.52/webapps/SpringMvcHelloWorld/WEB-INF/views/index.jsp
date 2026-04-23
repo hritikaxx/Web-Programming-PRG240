@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,18 +37,16 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
-              <ul class="dropdown-menu dropdown-menu-end">
-               <c:choose>
-                <c:when test="${not empty user}">
-                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/addPet">+ Add Pet</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">Logout (${user})</a></li>
-              </c:when>
-              <c:otherwise>
-                 <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
-                 <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
-              </c:otherwise>
-              </c:choose>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <c:if test="${empty sessionScope.loggedInUser}">
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
+              </c:if>
+              <c:if test="${not empty sessionScope.loggedInUser}">
+                <li><span class="dropdown-item-text">Logged in as ${sessionScope.loggedInUser}</span></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">Logout</a></li>
+              </c:if>
             </ul>
           </li>
         </ul>
@@ -80,8 +80,7 @@
       <h2 class="text-center mb-5">Pets Available for Adoption</h2>
 
       <div class="row g-4 justify-content-center">
-
-        <!-- Max -->
+        <!-- Original static pets remain here -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="max.html">
@@ -92,14 +91,12 @@
               <ul class="list-unstyled mb-2 small">
                 <li><b>Age:</b> 2 Years</li>
                 <li><b>Breed:</b> Labrador</li>
-                <li><b>Personality:</b> Playful, friendly, active</li>
               </ul>
               <a href="max.html" class="btn btn-adopt mt-auto">View Details</a>
             </div>
           </div>
         </div>
 
-        <!-- Moon -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="moon.html">
@@ -110,14 +107,13 @@
               <ul class="list-unstyled mb-2 small">
                 <li><b>Age:</b> 5 Years</li>
                 <li><b>Breed:</b> Pug</li>
-                <li><b>Personality:</b> Friendly, shy, gentle</li>
+
               </ul>
               <a href="moon.html" class="btn btn-adopt mt-auto">View Details</a>
             </div>
           </div>
         </div>
 
-        <!-- Tommy -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="tommy.html">
@@ -135,7 +131,6 @@
           </div>
         </div>
 
-        <!-- Luna -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="luna.html">
@@ -153,7 +148,6 @@
           </div>
         </div>
 
-        <!-- Bella -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="bella.html">
@@ -171,7 +165,6 @@
           </div>
         </div>
 
-        <!-- Cookie -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="cookie.html">
@@ -188,7 +181,10 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="row g-4 justify-content-center" id="petsContainer">
+        <!-- New pets added by users will appear here -->
       </div>
     </div>
   </section>
@@ -242,6 +238,74 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Load pets from API
+    function loadPets() {
+      fetch('${pageContext.request.contextPath}/api/pets')
+        .then(response => response.json())
+        .then(result => {
+          if (result.status === 'success') {
+            displayPets(result.pets);
+          } else {
+            console.error('Failed to load pets:', result.message);
+          }
+        })
+        .catch(err => {
+          console.error('Error loading pets:', err);
+        });
+    }
+
+    function getPetPersonality(type) {
+      if (!type) {
+        return 'Friendly, gentle';
+      }
+      const lower = type.toLowerCase();
+      if (lower.includes('cat')) {
+        return 'Calm, affectionate';
+      }
+      if (lower.includes('dog') || lower.includes('husky') || lower.includes('labrador') || lower.includes('mixed')) {
+        return 'Playful, loyal';
+      }
+      return 'Friendly, gentle';
+    }
+
+    function displayPets(pets) {
+      const container = document.getElementById('petsContainer');
+      container.innerHTML = '';
+
+      pets.forEach(pet => {
+        const imageSrc = pet.imagePath ? '${pageContext.request.contextPath}/' + pet.imagePath : 'https://via.placeholder.com/300x300?text=No+Image';
+        const plural = pet.age != 1 ? 's' : '';
+        const petCard =
+          '<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">' +
+            '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
+              '<img src="' + imageSrc + '" ' +
+                   'class="card-img-top" ' +
+                   'style="width:100%; height:300px; object-fit:cover; object-position:center top; border-bottom: 3px solid #e8d5c2;" ' +
+                   'alt="' + pet.name + ' the ' + pet.type + '">' +
+              '<div class="card-body d-flex flex-column p-3">' +
+                '<h5 class="card-title fw-semibold mb-1">' + pet.name + '</h5>' +
+                '<ul class="list-unstyled mb-2 small">' +
+                  '<li><b>Age:</b> ' + pet.age + ' Year' + plural + '</li>' +
+                  '<li><b>Breed:</b> ' + pet.type + '</li>' +
+                '</ul>' +
+                '<button class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</button>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        container.innerHTML += petCard;
+      });
+    }
+
+    function viewPetDetails(petId) {
+      // For now, just alert. Can be expanded to show modal or redirect
+      alert('Pet details for ID: ' + petId);
+    }
+
+    // Load pets when page loads
+    document.addEventListener('DOMContentLoaded', loadPets);
+  </script>
 
 </body>
 </html>

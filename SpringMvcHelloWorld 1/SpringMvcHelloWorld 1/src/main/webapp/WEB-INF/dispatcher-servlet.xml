@@ -31,12 +31,15 @@
         <mvc:interceptor>
             <mvc:mapping path="/register"/>
             <mvc:mapping path="/register/**"/>
+            <mvc:mapping path="/addPet"/>
+            <mvc:mapping path="/api/addPet"/>
             <bean class="com.example.security.SessionAuthInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 
     <!-- Serve static resources (CSS, JS, images) from /resources/ URL path -->
     <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/uploads/**" location="/uploads/"/>
 
     <!-- H2 DataSource - file-based database for persistence across restarts -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -55,6 +58,10 @@
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- Multipart resolver for file uploads -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
     </bean>
 
 </beans>

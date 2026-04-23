@@ -5543,3 +5543,88 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
 	... 43 common frames omitted
+2026-04-22 08:27:07 [Catalina-utility-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-22 08:27:10 [Catalina-utility-2] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-22 08:27:10 [Catalina-utility-2] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-22 08:27:12 [Catalina-utility-2] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-22 08:27:14 [Catalina-utility-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6954 ms
+2026-04-22 08:27:17 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-22 08:27:22 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-22 08:27:22 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-22 08:27:24 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-22 08:27:25 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8591 ms
+2026-04-23 15:16:42 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 15:16:47 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 15:16:47 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 15:16:47 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 15:16:49 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 15:16:50 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7979 ms
+2026-04-23 15:20:51 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 15:20:55 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 15:20:55 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 15:20:56 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 15:20:57 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 15:20:59 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7761 ms
+2026-04-23 15:46:39 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 15:46:43 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 15:46:43 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 15:46:44 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 15:46:45 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 15:46:47 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7577 ms
+2026-04-23 15:46:52 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 15:47:24 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 15:47:24 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 16:05:53 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 16:05:57 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 16:05:57 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 16:05:57 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 16:05:59 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 16:06:01 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7895 ms
+2026-04-23 16:06:06 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 16:07:22 [http-nio-8080-exec-6] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 16:07:22 [http-nio-8080-exec-6] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 16:09:06 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 16:23:33 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 16:23:37 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 16:23:38 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 16:23:38 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 16:23:39 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 16:23:41 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7572 ms
+2026-04-23 16:23:46 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 16:24:10 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 16:24:10 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 16:24:16 [http-nio-8080-exec-7] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 16:24:16 [http-nio-8080-exec-7] WARN  com.example.service.LoginService - Incorrect password for username: hritika.singh
+2026-04-23 16:24:24 [http-nio-8080-exec-10] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 16:24:24 [http-nio-8080-exec-10] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 16:25:19 [http-nio-8080-exec-6] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 17:39:33 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 17:39:36 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 17:39:37 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 17:39:37 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 17:39:39 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 17:39:40 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7546 ms
+2026-04-23 17:39:49 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 17:40:01 [http-nio-8080-exec-4] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-23 17:41:20 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 17:41:20 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 17:41:40 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=1
+2026-04-23 17:41:40 [http-nio-8080-exec-1] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 1
+2026-04-23 17:41:40 [http-nio-8080-exec-1] INFO  com.example.service.PetService - Pet added successfully with id: 1
+2026-04-23 17:41:41 [http-nio-8080-exec-4] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 17:41:57 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /SpringMvcHelloWorld/cookie.html
+2026-04-23 17:41:57 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /SpringMvcHelloWorld/cookie.html.
+2026-04-23 17:43:07 [http-nio-8080-exec-6] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 17:59:54 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-23 17:59:59 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-23 17:59:59 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-23 17:59:59 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-23 18:00:01 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-23 18:00:02 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7817 ms
+2026-04-23 18:00:08 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:00:12 [http-nio-8080-exec-5] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:00:29 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-23 18:00:30 [http-nio-8080-exec-8] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-23 18:00:41 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:00:47 [http-nio-8080-exec-6] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-23 18:00:54 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Retrieved 1 pets from database

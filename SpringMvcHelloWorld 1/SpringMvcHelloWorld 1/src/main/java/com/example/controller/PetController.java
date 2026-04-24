@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -53,6 +54,7 @@ public class PetController {
             @RequestParam("name") String name,
             @RequestParam("type") String type,
             @RequestParam("age") String ageStr,
+            @RequestParam(value = "personality", required = false) String personality,
             @RequestParam(value = "image", required = false) MultipartFile image,
             HttpSession session) {
 
@@ -91,34 +93,21 @@ public class PetController {
         }
 
         // Handle image upload
-        String imagePath = null;
+        byte[] imageData = null;
         if (image != null && !image.isEmpty()) {
             try {
-                String uploadDir = session.getServletContext().getRealPath("/uploads/pets");
-                if (uploadDir == null) {
-                    uploadDir = Paths.get("uploads", "pets").toAbsolutePath().toString();
-                }
-                Path uploadPath = Paths.get(uploadDir);
-                if (!Files.exists(uploadPath)) {
-                    Files.createDirectories(uploadPath);
-                }
-
-                String fileName = System.currentTimeMillis() + "_" + image.getOriginalFilename();
-                Path filePath = uploadPath.resolve(fileName);
-                Files.write(filePath, image.getBytes());
-
-                imagePath = "uploads/pets/" + fileName;
+                imageData = image.getBytes();
             } catch (IOException e) {
-                logger.error("Failed to save image", e);
+                logger.error("Failed to read image data", e);
                 response.put("status", "error");
-                response.put("message", "Failed to save image");
+                response.put("message", "Failed to read image data");
                 return ResponseEntity.status(500).body(response);
             }
         }
 
         try {
             // Add pet
-            Pet pet = petService.addPet(name.trim(), type.trim(), age, imagePath);
+            Pet pet = petService.addPet(name.trim(), type.trim(), age, personality != null ? personality.trim() : null, imageData);
 
             response.put("status", "success");
             response.put("pet", pet);
@@ -136,9 +125,24 @@ public class PetController {
     public ResponseEntity<?> getAllPetsApi() {
         try {
             List<Pet> pets = petService.getAllPets();
+            List<Map<String, Object>> petMaps = new ArrayList<>();
+            for (Pet pet : pets) {
+                Map<String, Object> petMap = new HashMap<>();
+                petMap.put("id", pet.getId());
+                petMap.put("name", pet.getName());
+                petMap.put("type", pet.getType());
+                petMap.put("age", pet.getAge());
+                petMap.put("personality", pet.getPersonality());
+                if (pet.getImage() != null) {
+                    petMap.put("imageUrl", "/api/pets/" + pet.getId() + "/image");
+                } else {
+                    petMap.put("imageUrl", null);
+                }
+                petMaps.add(petMap);
+            }
             Map<String, Object> response = new HashMap<>();
             response.put("status", "success");
-            response.put("pets", pets);
+            response.put("pets", petMaps);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             logger.error("Error retrieving pets", e);
@@ -147,6 +151,31 @@ public class PetController {
             response.put("message", "Failed to retrieve pets");
             return ResponseEntity.status(500).body(response);
         }
+    }
+
+    @GetMapping("/api/pets/{id}/image")
+    @ResponseBody
+    public ResponseEntity<byte[]> getPetImage(@PathVariable("id") Long id) {
+        Pet pet = petService.getPetById(id);
+        if (pet == null || pet.getImage() == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        // Determine content type based on image data (simple check)
+        String contentType = "image/jpeg"; // default
+        if (pet.getImage().length > 0) {
+            if (pet.getImage()[0] == (byte) 0x89 && pet.getImage()[1] == (byte) 0x50) {
+                contentType = "image/png";
+            } else if (pet.getImage()[0] == (byte) 0xFF && pet.getImage()[1] == (byte) 0xD8) {
+                contentType = "image/jpeg";
+            } else if (pet.getImage()[0] == (byte) 0x47 && pet.getImage()[1] == (byte) 0x49) {
+                contentType = "image/gif";
+            }
+        }
+
+        return ResponseEntity.ok()
+                .contentType(org.springframework.http.MediaType.parseMediaType(contentType))
+                .body(pet.getImage());
     }
 
     @DeleteMapping("/api/pets/{id}")
@@ -162,7 +191,6 @@ public class PetController {
 
         boolean deleted = petService.deletePet(id);
         if (deleted) {
-            deletePetImageFile(pet.getImagePath(), session);
             Map<String, Object> response = new HashMap<>();
             response.put("status", "success");
             response.put("message", "Pet deleted successfully");
@@ -173,25 +201,5 @@ public class PetController {
         response.put("status", "error");
         response.put("message", "Failed to delete pet");
         return ResponseEntity.status(500).body(response);
-    }
-
-    private void deletePetImageFile(String imagePath, HttpSession session) {
-        if (imagePath == null || imagePath.trim().isEmpty()) {
-            return;
-        }
-        try {
-            String realPath = session.getServletContext().getRealPath("/" + imagePath);
-            Path filePath;
-            if (realPath != null) {
-                filePath = Paths.get(realPath);
-            } else {
-                filePath = Paths.get("uploads").resolve(imagePath.replaceFirst("^uploads/", ""));
-            }
-            if (Files.exists(filePath)) {
-                Files.delete(filePath);
-            }
-        } catch (IOException e) {
-            logger.warn("Unable to delete image file: {}", imagePath, e);
-        }
     }
 }

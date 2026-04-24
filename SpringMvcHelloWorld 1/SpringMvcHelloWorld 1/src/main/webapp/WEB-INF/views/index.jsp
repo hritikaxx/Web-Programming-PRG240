@@ -84,7 +84,7 @@
     <div class="container">
       <h2 class="text-center mb-5">Pets Available for Adoption</h2>
 
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center mb-4">
         <!-- Original static pets remain here -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
@@ -279,8 +279,16 @@
         noPetsMessage.style.display = 'none';
       }
       pets.forEach(pet => {
-        const imageSrc = pet.imagePath ? '${pageContext.request.contextPath}/' + pet.imagePath : 'https://via.placeholder.com/300x300?text=No+Image';
-        const plural = pet.age != 1 ? 's' : '';
+        const imageSrc = pet.imageUrl ? '${pageContext.request.contextPath}' + pet.imageUrl : 'https://via.placeholder.com/300x300?text=No+Image';
+        let ageText;
+        if (pet.age < 12) {
+          const plural = pet.age != 1 ? 's' : '';
+          ageText = pet.age + ' Month' + plural;
+        } else {
+          const years = Math.floor(pet.age / 12);
+          const plural = years != 1 ? 's' : '';
+          ageText = years + ' Year' + plural;
+        }
         const petCard =
           '<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">' +
             '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
@@ -293,9 +301,8 @@
               '<div class="card-body d-flex flex-column p-3">' +
                 '<h5 class="card-title fw-semibold mb-1">' + pet.name + '</h5>' +
                 '<ul class="list-unstyled mb-2 small">' +
-                  '<li><b>Age:</b> ' + pet.age + ' Year' + plural + '</li>' +
-                  '<li><b>Breed:</b> ' + pet.type + '</li>' +
-                '</ul>' +
+                  '<li><b>Age:</b> ' + ageText + '</li>' +
+                  '<li><b>Breed:</b> ' + pet.type + '</li>' +                  (pet.personality ? '<li><b>Personality:</b> ' + pet.personality + '</li>' : '') +                '</ul>' +
                 '<a href="#" class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</a>' +
               '</div>' +
             '</div>' +

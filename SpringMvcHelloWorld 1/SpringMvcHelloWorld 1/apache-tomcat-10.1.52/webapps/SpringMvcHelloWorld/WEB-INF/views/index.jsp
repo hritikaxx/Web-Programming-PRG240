@@ -84,10 +84,8 @@
     <div class="container">
       <h2 class="text-center mb-5">Pets Available for Adoption</h2>
 
-      <!-- Single unified row — static + dynamic pets all go here -->
-      <div class="row g-4 justify-content-center" id="petsContainer">
-
-        <!-- Static pets -->
+            <div class="row g-4 justify-content-center mb-4">
+        <!-- Original static pets remain here -->
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">
             <a href="max.html">
@@ -114,6 +112,7 @@
               <ul class="list-unstyled mb-2 small">
                 <li><b>Age:</b> 5 Years</li>
                 <li><b>Breed:</b> Pug</li>
+
               </ul>
               <a href="moon.html" class="btn btn-adopt mt-auto">View Details</a>
             </div>
@@ -187,11 +186,11 @@
             </div>
           </div>
         </div>
-
-        <!-- Dynamic pets appended here by JS -->
-
       </div>
 
+      <div class="row g-4 justify-content-center" id="petsContainer">
+        <!-- Pets added by users will appear here -->
+      </div>
       <div id="noPetsMessage" class="text-center mt-4" style="display: none; color: #6c757d;">
         <p class="mb-0">No pets available right now. Add a new pet after logging in.</p>
       </div>
@@ -249,21 +248,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Convert stored months to a readable age string
-    function formatAge(totalMonths) {
-      if (totalMonths == null || isNaN(totalMonths)) return 'Unknown';
-      const months = parseInt(totalMonths);
-      if (months < 12) {
-        return months + ' Month' + (months !== 1 ? 's' : '');
-      }
-      const years = Math.floor(months / 12);
-      const rem   = months % 12;
-      if (rem === 0) {
-        return years + ' Year' + (years !== 1 ? 's' : '');
-      }
-      return years + ' Year' + (years !== 1 ? 's' : '') + ' ' + rem + ' Month' + (rem !== 1 ? 's' : '');
-    }
-
     function loadPets() {
       fetch('${pageContext.request.contextPath}/api/pets')
         .then(response => response.json())
@@ -282,46 +266,48 @@
     function displayPets(pets) {
       const container = document.getElementById('petsContainer');
       const noPetsMessage = document.getElementById('noPetsMessage');
-
-      // Remove any previously injected dynamic cards (in case of reload)
-      container.querySelectorAll('.dynamic-pet').forEach(el => el.remove());
+      container.innerHTML = '';
 
       if (!Array.isArray(pets) || pets.length === 0) {
-        if (noPetsMessage) noPetsMessage.style.display = 'block';
+        if (noPetsMessage) {
+          noPetsMessage.style.display = 'block';
+        }
         return;
       }
 
-      if (noPetsMessage) noPetsMessage.style.display = 'none';
-
+      if (noPetsMessage) {
+        noPetsMessage.style.display = 'none';
+      }
       pets.forEach(pet => {
-        const imageSrc = pet.imagePath
-          ? '${pageContext.request.contextPath}/' + pet.imagePath
-          : 'https://via.placeholder.com/300x300?text=No+Image';
-
-        const ageLabel = formatAge(pet.age);
-
-        const col = document.createElement('div');
-        col.className = 'col-12 col-md-6 col-lg-4 d-flex justify-content-center dynamic-pet';
-        col.innerHTML =
-          '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
-            '<a href="#" onclick="viewPetDetails(' + pet.id + ')">' +
-              '<img src="' + imageSrc + '" ' +
-                   'class="card-img-top" ' +
-                   'style="width:100%; height:300px; object-fit:cover; object-position:center top; border-bottom: 3px solid #e8d5c2;" ' +
-                   'alt="' + pet.name + ' the ' + pet.type + '" ' +
-                   'onerror="this.src=\'https://via.placeholder.com/300x300?text=No+Image\'">' +
-            '</a>' +
-            '<div class="card-body d-flex flex-column p-3">' +
-              '<h5 class="card-title fw-semibold mb-1">' + pet.name + '</h5>' +
-              '<ul class="list-unstyled mb-2 small">' +
-                '<li><b>Age:</b> ' + ageLabel + '</li>' +
-                '<li><b>Breed:</b> ' + pet.type + '</li>' +
-              '</ul>' +
-              '<a href="#" class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</a>' +
+        const imageSrc = pet.imageUrl ? '${pageContext.request.contextPath}' + pet.imageUrl : 'https://via.placeholder.com/300x300?text=No+Image';
+        let ageText;
+        if (pet.age < 12) {
+          const plural = pet.age != 1 ? 's' : '';
+          ageText = pet.age + ' Month' + plural;
+        } else {
+          const years = Math.floor(pet.age / 12);
+          const plural = years != 1 ? 's' : '';
+          ageText = years + ' Year' + plural;
+        }
+        const petCard =
+          '<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">' +
+            '<div class="card h-100 text-center border-0 rounded-3 overflow-hidden" style="max-width: 300px; width: 100%;">' +
+              '<a href="#" onclick="viewPetDetails(' + pet.id + ')">' +
+                '<img src="' + imageSrc + '" ' +
+                     'class="card-img-top" ' +
+                     'style="width:100%; height:300px; object-fit:cover; object-position:center top; border-bottom: 3px solid #e8d5c2;" ' +
+                     'alt="' + pet.name + ' the ' + pet.type + '">' +
+              '</a>' +
+              '<div class="card-body d-flex flex-column p-3">' +
+                '<h5 class="card-title fw-semibold mb-1">' + pet.name + '</h5>' +
+                '<ul class="list-unstyled mb-2 small">' +
+                  '<li><b>Age:</b> ' + ageText + '</li>' +
+                  '<li><b>Breed:</b> ' + pet.type + '</li>' +                  (pet.personality ? '<li><b>Personality:</b> ' + pet.personality + '</li>' : '') +                '</ul>' +
+                '<a href="#" class="btn btn-adopt mt-auto" onclick="viewPetDetails(' + pet.id + ')">View Details</a>' +
+              '</div>' +
             '</div>' +
           '</div>';
-
-        container.appendChild(col);
+        container.innerHTML += petCard;
       });
     }
 

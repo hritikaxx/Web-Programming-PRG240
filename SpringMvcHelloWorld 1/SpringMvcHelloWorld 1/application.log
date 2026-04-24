@@ -481,3 +481,16 @@ Caused by: java.lang.ClassNotFoundException: com.example.gatling.UserCrudSimulat
 2026-04-23 21:10:01 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-23 21:17:27 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-23 21:25:13 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 06:45:06 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 06:54:58 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:04:49 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:11:05 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:20:58 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:23:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:27:01 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:42:06 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:51:05 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 07:53:45 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 08:02:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 08:10:20 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-24 08:15:27 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final

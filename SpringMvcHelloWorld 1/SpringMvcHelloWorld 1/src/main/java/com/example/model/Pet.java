@@ -17,18 +17,21 @@ public class Pet {
 
     private int age;
 
-    private String imagePath;  // Path to the uploaded image
+    private String personality;
+
+    private byte[] image;  // Image data stored as byte array
 
     // No-argument constructor — required by Jackson
     public Pet() {
     }
 
     // Constructor with all fields (except id)
-    public Pet(String name, String type, int age, String imagePath) {
+    public Pet(String name, String type, int age, String personality, byte[] image) {
         this.name = name;
         this.type = type;
         this.age = age;
-        this.imagePath = imagePath;
+        this.personality = personality;
+        this.image = image;
     }
 
     // Getters and Setters
@@ -65,11 +68,19 @@ public class Pet {
         this.age = age;
     }
 
-    public String getImagePath() {
-        return imagePath;
+    public String getPersonality() {
+        return personality;
     }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
+    public void setPersonality(String personality) {
+        this.personality = personality;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 }

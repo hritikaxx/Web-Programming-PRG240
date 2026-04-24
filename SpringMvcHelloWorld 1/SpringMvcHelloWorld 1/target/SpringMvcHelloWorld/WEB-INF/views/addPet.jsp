@@ -117,6 +117,7 @@
             formData.append('name', document.getElementById('name').value);
             formData.append('type', document.getElementById('breed').value);
             formData.append('age', ageInMonths);
+            formData.append('personality', document.getElementById('personality').value);
 
             const imageInput = document.getElementById('image');
             if (imageInput.files.length > 0) {

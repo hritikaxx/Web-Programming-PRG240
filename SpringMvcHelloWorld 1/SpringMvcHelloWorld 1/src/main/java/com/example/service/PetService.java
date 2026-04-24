@@ -27,10 +27,10 @@ public class PetService {
     /**
      * Add a new pet.
      */
-    public Pet addPet(String name, String type, int age, String imagePath) {
+    public Pet addPet(String name, String type, int age, String personality, byte[] image) {
         logger.info("Adding new pet: name={}, type={}, age={}", name, type, age);
 
-        PetDTO dto = new PetDTO(name, type, age, imagePath);
+        PetDTO dto = new PetDTO(name, type, age, personality, image);
         PetDTO saved = petDAO.save(dto);
 
         logger.info("Pet added successfully with id: {}", saved.getId());
@@ -71,7 +71,8 @@ public class PetService {
                 updated.getName(),
                 updated.getType(),
                 updated.getAge(),
-                updated.getImagePath()
+                updated.getPersonality(),
+                updated.getImage()
         );
 
         PetDTO result = petDAO.update(id, dto);
@@ -97,7 +98,7 @@ public class PetService {
      * Helper method: Convert DTO to Pet model.
      */
     private Pet toPet(PetDTO dto) {
-        Pet pet = new Pet(dto.getName(), dto.getType(), dto.getAge(), dto.getImagePath());
+        Pet pet = new Pet(dto.getName(), dto.getType(), dto.getAge(), dto.getPersonality(), dto.getImage());
         pet.setId(dto.getId());
         return pet;
     }

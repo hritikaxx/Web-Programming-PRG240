@@ -7043,3 +7043,10 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "personality" not fou
 2026-04-24 08:16:12 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-24 08:16:13 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6616 ms
 2026-04-24 08:16:19 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 0 pets from database
+2026-04-24 08:16:36 [http-nio-8080-exec-6] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-24 08:16:36 [http-nio-8080-exec-6] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-24 08:16:48 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Adding new pet: name=Pearl, type=Husky, age=12
+2026-04-24 08:16:48 [http-nio-8080-exec-8] INFO  com.example.dao.PetDAOImpl - Pet saved with id: 1
+2026-04-24 08:16:48 [http-nio-8080-exec-8] INFO  com.example.service.PetService - Pet added successfully with id: 1
+2026-04-24 08:16:49 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 1 pets from database
+2026-04-24 08:16:57 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 1 pets from database

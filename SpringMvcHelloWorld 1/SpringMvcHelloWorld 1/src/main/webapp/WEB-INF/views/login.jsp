@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,9 +59,14 @@ footer{
 
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="userregister">Register</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/addPet">Add Pet</a></li>
+<c:if test="${empty sessionScope.loggedInUser}">
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/userregister">Register</a></li>
+</c:if>
+<c:if test="${not empty sessionScope.loggedInUser}">
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a></li>
+</c:if>
 </ul>
 
 </div>
@@ -86,6 +92,7 @@ footer{
 <% } %>
 
 <form action="${pageContext.request.contextPath}/loginUser" method="post">
+<input type="hidden" name="redirectAfterLogin" value="${redirectAfterLogin}" />
 
 <div class="mb-3">
 <label class="form-label">Username</label>

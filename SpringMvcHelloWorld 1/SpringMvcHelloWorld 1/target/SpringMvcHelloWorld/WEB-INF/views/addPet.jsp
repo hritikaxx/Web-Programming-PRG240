@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Pet</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/paws.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #F6EFE7; }
         .card { max-width: 560px; margin: 36px auto; padding: 32px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.08); border: 1px solid rgba(140, 118, 92, 0.12); background-color: rgba(255,255,255,0.98); }
@@ -25,6 +27,39 @@
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="${pageContext.request.contextPath}/">PAWS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="${pageContext.request.contextPath}/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="${pageContext.request.contextPath}/addPet">Add Pet</a>
+                    </li>
+                    <c:if test="${empty sessionScope.loggedInUser}">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="${pageContext.request.contextPath}/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="${pageContext.request.contextPath}/userregister">Register</a>
+                        </li>
+                    </c:if>
+                    <c:if test="${not empty sessionScope.loggedInUser}">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="${pageContext.request.contextPath}/logout">Logout</a>
+                        </li>
+                    </c:if>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="card">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
             <span style="font-size: 0.9rem; color: #555;">Logged in as <strong>${sessionScope.loggedInUser}</strong></span>
@@ -70,6 +105,7 @@
         </form>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('image').addEventListener('change', function(e) {
             const file = e.target.files[0];

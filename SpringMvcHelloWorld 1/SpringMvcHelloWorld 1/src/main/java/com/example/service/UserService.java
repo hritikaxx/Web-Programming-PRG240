@@ -56,6 +56,17 @@ public class UserService {
         return users;
     }
 
+    public User getUserByUsername(String username) {
+        UserDTO dto = userDAO.findByUsername(username);
+
+        if (dto == null) {
+            logger.info("User not found with username: {}", username);
+            return null;
+        }
+
+        return toUser(dto);
+    }
+
     public User getUserById(Long id) {
         UserDTO dto = userDAO.findById(id);
 

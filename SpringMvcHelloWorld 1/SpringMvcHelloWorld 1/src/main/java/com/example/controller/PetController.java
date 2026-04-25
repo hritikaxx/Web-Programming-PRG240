@@ -1,7 +1,9 @@
 package com.example.controller;
 
 import com.example.model.Pet;
+import com.example.model.User;
 import com.example.service.PetService;
+import com.example.service.UserService;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -35,13 +37,16 @@ public class PetController {
     @Autowired
     private PetService petService;
 
+    @Autowired
+    private UserService userService;
+
     // ==================== JSP VIEW ENDPOINTS ====================
 
     @GetMapping("/addPet")
     public String showAddPetPage(HttpSession session) {
         // Check if user is logged in
         if (session.getAttribute("loggedInUser") == null) {
-            return "redirect:/login";
+            return "redirect:/login?redirect=/addPet";
         }
         return "addPet";
     }
@@ -65,6 +70,17 @@ public class PetController {
             response.put("message", "User not logged in");
             return ResponseEntity.status(401).body(response);
         }
+
+        String username = (String) session.getAttribute("loggedInUser");
+        User user = userService.getUserByUsername(username);
+        if (user == null) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "error");
+            response.put("message", "User not found");
+            return ResponseEntity.status(401).body(response);
+        }
+
+        Long userId = user.getId();
 
         Map<String, Object> response = new HashMap<>();
 
@@ -107,7 +123,7 @@ public class PetController {
 
         try {
             // Add pet
-            Pet pet = petService.addPet(name.trim(), type.trim(), age, personality != null ? personality.trim() : null, imageData);
+            Pet pet = petService.addPet(name.trim(), type.trim(), age, personality != null ? personality.trim() : null, imageData, userId);
 
             response.put("status", "success");
             response.put("pet", pet);

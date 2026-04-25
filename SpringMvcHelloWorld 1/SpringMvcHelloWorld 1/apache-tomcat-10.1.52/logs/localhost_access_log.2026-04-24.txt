@@ -176,3 +176,9 @@
 0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:16:56 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 14186
 0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:16:57 +0545] "GET /SpringMvcHelloWorld/api/pets HTTP/1.1" 200 154
 0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:16:57 +0545] "GET /SpringMvcHelloWorld/api/pets/1/image HTTP/1.1" 200 102285
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:20:59 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 13987
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:20:59 +0545] "GET /SpringMvcHelloWorld/home HTTP/1.1" 200 13987
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:21:00 +0545] "GET /SpringMvcHelloWorld/api/pets HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:21:16 +0545] "GET /SpringMvcHelloWorld/login HTTP/1.1" 200 2517
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:21:23 +0545] "POST /SpringMvcHelloWorld/loginUser HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [24/Apr/2026:08:21:24 +0545] "GET /SpringMvcHelloWorld/addPet HTTP/1.1" 200 8218

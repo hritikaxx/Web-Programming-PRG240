@@ -30,7 +30,8 @@ public class PetDAOImpl implements PetDAO {
             rs.getString("type"),
             rs.getInt("age"),
             rs.getString("personality"),
-            rs.getBytes("image")
+            rs.getBytes("image"),
+            rs.getLong("user_id")
     );
 
     public PetDAOImpl(JdbcTemplate jdbcTemplate) {
@@ -40,17 +41,17 @@ public class PetDAOImpl implements PetDAO {
 
     private void initTable() {
         try {
-            // Drop table if exists to handle schema changes
-            jdbcTemplate.execute("DROP TABLE IF EXISTS pets");
-
+            // Create table if it doesn't exist (don't drop to preserve data)
             jdbcTemplate.execute(
-                    "CREATE TABLE pets (" +
+                    "CREATE TABLE IF NOT EXISTS pets (" +
                             "id BIGINT AUTO_INCREMENT PRIMARY KEY, " +
                             "name VARCHAR(255) NOT NULL, " +
                             "type VARCHAR(255) NOT NULL, " +
                             "age INT NOT NULL, " +
                             "personality VARCHAR(255), " +
-                            "image BLOB" +
+                            "image BLOB, " +
+                            "user_id BIGINT NOT NULL, " +
+                            "FOREIGN KEY (user_id) REFERENCES users(id)" +
                             ")"
             );
             logger.info("Pet table initialized successfully");
@@ -62,7 +63,7 @@ public class PetDAOImpl implements PetDAO {
 
     @Override
     public PetDTO save(PetDTO pet) {
-        String sql = "INSERT INTO pets (name, type, age, personality, image) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO pets (name, type, age, personality, image, user_id) VALUES (?, ?, ?, ?, ?, ?)";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
@@ -73,6 +74,7 @@ public class PetDAOImpl implements PetDAO {
             ps.setInt(3, pet.getAge());
             ps.setString(4, pet.getPersonality());
             ps.setBytes(5, pet.getImage());
+            ps.setLong(6, pet.getUserId());
             return ps;
         }, keyHolder);
 
@@ -88,21 +90,21 @@ public class PetDAOImpl implements PetDAO {
 
     @Override
     public List<PetDTO> findAll() {
-        String sql = "SELECT id, name, type, age, personality, image FROM pets";
+        String sql = "SELECT id, name, type, age, personality, image, user_id FROM pets";
         return jdbcTemplate.query(sql, rowMapper);
     }
 
     @Override
     public PetDTO findById(Long id) {
-        String sql = "SELECT id, name, type, age, personality, image FROM pets WHERE id = ?";
+        String sql = "SELECT id, name, type, age, personality, image, user_id FROM pets WHERE id = ?";
         List<PetDTO> results = jdbcTemplate.query(sql, rowMapper, id);
         return results.isEmpty() ? null : results.get(0);
     }
 
     @Override
     public PetDTO update(Long id, PetDTO pet) {
-        String sql = "UPDATE pets SET name = ?, type = ?, age = ?, personality = ?, image = ? WHERE id = ?";
-        int rowsAffected = jdbcTemplate.update(sql, pet.getName(), pet.getType(), pet.getAge(), pet.getPersonality(), pet.getImage(), id);
+        String sql = "UPDATE pets SET name = ?, type = ?, age = ?, personality = ?, image = ?, user_id = ? WHERE id = ?";
+        int rowsAffected = jdbcTemplate.update(sql, pet.getName(), pet.getType(), pet.getAge(), pet.getPersonality(), pet.getImage(), pet.getUserId(), id);
 
         if (rowsAffected == 0) {
             logger.info("No pet found with id: {}", id);

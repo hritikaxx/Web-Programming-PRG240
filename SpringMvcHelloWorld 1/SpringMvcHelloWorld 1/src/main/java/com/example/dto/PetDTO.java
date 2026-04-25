@@ -12,28 +12,31 @@ public class PetDTO {
     private int age;
     private String personality;
     private byte[] image;
+    private Long userId;
 
     // No-argument constructor
     public PetDTO() {
     }
 
     // Constructor without id (used when creating a NEW pet)
-    public PetDTO(String name, String type, int age, String personality, byte[] image) {
+    public PetDTO(String name, String type, int age, String personality, byte[] image, Long userId) {
         this.name = name;
         this.type = type;
         this.age = age;
         this.personality = personality;
         this.image = image;
+        this.userId = userId;
     }
 
     // Constructor with id (used when reading an EXISTING pet from the database)
-    public PetDTO(Long id, String name, String type, int age, String personality, byte[] image) {
+    public PetDTO(Long id, String name, String type, int age, String personality, byte[] image, Long userId) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.age = age;
         this.personality = personality;
         this.image = image;
+        this.userId = userId;
     }
 
     // Getters and Setters
@@ -84,5 +87,13 @@ public class PetDTO {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

@@ -25,35 +25,22 @@
           <li class="nav-item">
             <a class="nav-link px-3" href="${pageContext.request.contextPath}/">Home</a>
           </li>
-          <c:if test="${not empty sessionScope.loggedInUser}">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="${pageContext.request.contextPath}/addPet">Add Pet</a>
+          </li>
+          <c:if test="${empty sessionScope.loggedInUser}">
             <li class="nav-item">
-              <a class="nav-link px-3" href="${pageContext.request.contextPath}/addPet">Add Pet</a>
+              <a class="nav-link px-3" href="${pageContext.request.contextPath}/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="${pageContext.request.contextPath}/userregister">Register</a>
             </li>
           </c:if>
-          <li class="nav-item dropdown">
-            <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Adopt</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/#pets">Browse Pets</a></li>
-              <li><a class="dropdown-item" href="${pageContext.request.contextPath}/adoption">Adoption Form</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="${pageContext.request.contextPath}/contact">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <c:if test="${empty sessionScope.loggedInUser}">
-                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/login">Login</a></li>
-                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/userregister">Register</a></li>
-              </c:if>
-              <c:if test="${not empty sessionScope.loggedInUser}">
-                <li><span class="dropdown-item-text">Logged in as ${sessionScope.loggedInUser}</span></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">Logout</a></li>
-              </c:if>
-            </ul>
-          </li>
+          <c:if test="${not empty sessionScope.loggedInUser}">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="${pageContext.request.contextPath}/logout">Logout</a>
+            </li>
+          </c:if>
         </ul>
       </div>
     </div>
@@ -96,6 +83,7 @@
               <ul class="list-unstyled mb-2 small">
                 <li><b>Age:</b> 2 Years</li>
                 <li><b>Breed:</b> Labrador</li>
+                <li><b>Personality:</b> Playful, Loyal</li>
               </ul>
               <a href="max.html" class="btn btn-adopt mt-auto">View Details</a>
             </div>
@@ -112,6 +100,7 @@
               <ul class="list-unstyled mb-2 small">
                 <li><b>Age:</b> 5 Years</li>
                 <li><b>Breed:</b> Pug</li>
+                <li><b>Personality:</b> Friendly, energetic</li>
 
               </ul>
               <a href="moon.html" class="btn btn-adopt mt-auto">View Details</a>
@@ -271,6 +260,7 @@
       if (!Array.isArray(pets) || pets.length === 0) {
         if (noPetsMessage) {
           noPetsMessage.style.display = 'block';
+          noPetsMessage.innerHTML = '<p class="mb-0">No pets available right now. <a href="${pageContext.request.contextPath}/addPet">Add a new pet</a> after logging in.</p>';
         }
         return;
       }

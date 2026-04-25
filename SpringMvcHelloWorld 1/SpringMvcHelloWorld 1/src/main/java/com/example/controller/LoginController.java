@@ -28,7 +28,11 @@ public class LoginController {
     // ==================== JSP VIEW ENDPOINTS ====================
 
     @GetMapping("/login")
-    public String showLoginPage() {
+    public String showLoginPage(@RequestParam(value = "redirect", required = false) String redirect, Model model, HttpSession session) {
+        if (redirect != null && !redirect.isEmpty()) {
+            model.addAttribute("redirectAfterLogin", redirect);
+            session.setAttribute("redirectAfterLogin", redirect);
+        }
         return "login";
     }
 
@@ -48,6 +52,7 @@ public class LoginController {
     public String loginUser(
             @RequestParam("username") String username,
             @RequestParam("password") String password,
+            @RequestParam(value = "redirectAfterLogin", required = false) String redirectAfterLogin,
             Model model,
             HttpSession session) {
 
@@ -65,7 +70,15 @@ public class LoginController {
             }
 
             session.setAttribute("loggedInUser", username);
-            return "redirect:/addPet";
+            if (redirectAfterLogin != null && !redirectAfterLogin.isEmpty()) {
+                return "redirect:" + redirectAfterLogin;
+            }
+            String redirectTarget = (String) session.getAttribute("redirectAfterLogin");
+            if (redirectTarget != null && !redirectTarget.isEmpty()) {
+                session.removeAttribute("redirectAfterLogin");
+                return "redirect:" + redirectTarget;
+            }
+            return "redirect:/";
 
         } catch (Exception e) {
             logger.error("Error during login for username {}: {}", username, e.getMessage(), e);

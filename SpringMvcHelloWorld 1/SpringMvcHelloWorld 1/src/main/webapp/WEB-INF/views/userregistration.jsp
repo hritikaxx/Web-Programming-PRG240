@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,13 +55,18 @@ footer{
 <nav class="navbar navbar-expand-lg">
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="index">PAWS</a>
+<a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/">PAWS</a>
 
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/addPet">Add Pet</a></li>
+<c:if test="${empty sessionScope.loggedInUser}">
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/userregister">Register</a></li>
+</c:if>
+<c:if test="${not empty sessionScope.loggedInUser}">
+<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a></li>
+</c:if>
 </ul>
 
 </div>

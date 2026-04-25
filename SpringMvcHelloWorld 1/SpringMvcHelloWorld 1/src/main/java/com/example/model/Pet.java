@@ -21,17 +21,20 @@ public class Pet {
 
     private byte[] image;  // Image data stored as byte array
 
+    private Long userId;  // ID of the user who added this pet
+
     // No-argument constructor — required by Jackson
     public Pet() {
     }
 
     // Constructor with all fields (except id)
-    public Pet(String name, String type, int age, String personality, byte[] image) {
+    public Pet(String name, String type, int age, String personality, byte[] image, Long userId) {
         this.name = name;
         this.type = type;
         this.age = age;
         this.personality = personality;
         this.image = image;
+        this.userId = userId;
     }
 
     // Getters and Setters
@@ -82,5 +85,13 @@ public class Pet {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

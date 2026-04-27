@@ -38,7 +38,7 @@ Feature: User CRUD Operations
     Given the user management API is available
     When I request the user with ID 3
     Then I should receive the user details
-    And the user details should contain the username "hri"
+    And the user details should contain the username "hritika"
 
   Scenario: Fail to retrieve a user with non-existent ID
     Given the user management API is available
@@ -51,9 +51,9 @@ Feature: User CRUD Operations
     Given the user management API is available
     When I update the user with ID 3 with the following data:
       | fullName        | email                   | username | password |
-      | Hri Updated | hri@gmail.com | hri  | 12345678 |
+      | Hritika Updated | hritika.new@example.com | hritika  | 11111111 |
     Then the user should be updated successfully
-    And the update response should contain the fullName "Hri Updated"
+    And the update response should contain the fullName "Hritika Updated"
 
   Scenario: Fail to update a user with non-existent ID
     Given the user management API is available

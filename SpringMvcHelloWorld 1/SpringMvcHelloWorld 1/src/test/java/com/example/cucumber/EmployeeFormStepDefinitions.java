@@ -33,9 +33,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EmployeeFormStepDefinitions {
 
     private static final String BASE_URL = "http://localhost:8080/SpringMvcHelloWorld";
-        private static final String TEST_USERNAME = "hritika.singh";   
+        private static final String TEST_USERNAME = "hri";   
         private static final String TEST_PASSWORD = "12345678";         
-        private static final String TEST_EMAIL = "hritika@example.com"; 
+        private static final String TEST_EMAIL = "hri@example.com"; 
 
     private final HttpClient httpClient = HttpClient.newHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();

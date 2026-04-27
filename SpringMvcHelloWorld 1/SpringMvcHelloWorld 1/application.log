@@ -503,3 +503,269 @@ Caused by: java.lang.ClassNotFoundException: com.example.gatling.UserCrudSimulat
 2026-04-25 13:20:37 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-25 13:25:51 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2026-04-25 13:32:14 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-25 16:42:40 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-25 16:48:03 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-25 16:53:03 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-25 17:12:07 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 06:39:00 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 06:47:49 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 06:47:50 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 06:47:53 [main] ERROR io.gatling.app.Gatling$ - Run crashed
+java.lang.IllegalArgumentException: User defined Simulation class com.example.LoginSimulation could not be loaded
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:84)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$4(Selection.scala:88)
+	at scala.Option.orElse(Option.scala:477)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$3(Selection.scala:88)
+	at scala.Option.flatMap(Option.scala:283)
+	at io.gatling.app.Selection$Selector.singleSimulationFromConfig(Selection.scala:87)
+	at io.gatling.app.Selection$Selector.$anonfun$selection$1(Selection.scala:50)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.gatling.app.Selection$Selector.selection(Selection.scala:42)
+	at io.gatling.app.Selection$.apply(Selection.scala:35)
+	at io.gatling.app.Runner.run(Runner.scala:53)
+	at io.gatling.app.Gatling$.start(Gatling.scala:92)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:54)
+	at io.gatling.app.Gatling$.main(Gatling.scala:42)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.gatling.plugin.util.ForkMain.runMain(ForkMain.java:67)
+	at io.gatling.plugin.util.ForkMain.main(ForkMain.java:35)
+Caused by: java.lang.ClassNotFoundException: com.example.LoginSimulation
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:463)
+	at java.base/java.lang.Class.forName(Class.java:454)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$2(Selection.scala:73)
+	at scala.util.Try$.apply(Try.scala:217)
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:73)
+	... 18 common frames omitted
+2026-04-27 06:47:53 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 06:49:24 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 06:49:26 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 06:49:29 [main] ERROR io.gatling.app.Gatling$ - Run crashed
+java.lang.IllegalArgumentException: User defined Simulation class com.example.gatling.LoginSimulation could not be loaded
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:84)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$4(Selection.scala:88)
+	at scala.Option.orElse(Option.scala:477)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$3(Selection.scala:88)
+	at scala.Option.flatMap(Option.scala:283)
+	at io.gatling.app.Selection$Selector.singleSimulationFromConfig(Selection.scala:87)
+	at io.gatling.app.Selection$Selector.$anonfun$selection$1(Selection.scala:50)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.gatling.app.Selection$Selector.selection(Selection.scala:42)
+	at io.gatling.app.Selection$.apply(Selection.scala:35)
+	at io.gatling.app.Runner.run(Runner.scala:53)
+	at io.gatling.app.Gatling$.start(Gatling.scala:92)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:54)
+	at io.gatling.app.Gatling$.main(Gatling.scala:42)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.gatling.plugin.util.ForkMain.runMain(ForkMain.java:67)
+	at io.gatling.plugin.util.ForkMain.main(ForkMain.java:35)
+Caused by: java.lang.ClassNotFoundException: com.example.gatling.LoginSimulation
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:463)
+	at java.base/java.lang.Class.forName(Class.java:454)
+	at io.gatling.app.Selection$Selector.$anonfun$singleSimulationFromConfig$2(Selection.scala:73)
+	at scala.util.Try$.apply(Try.scala:217)
+	at io.gatling.app.Selection$Selector.findUserDefinedSimulationInClassloader$1(Selection.scala:73)
+	... 18 common frames omitted
+2026-04-27 06:49:29 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 06:50:51 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 06:50:53 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 06:50:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-27 06:50:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-27 06:50:57 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-27 06:50:57 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-27 06:50:58 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:58 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:58 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:58 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:58 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:58 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:50:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:50:59 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:00 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:01 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:02 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:03 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:04 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:05 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@4a016a9 has finished injecting
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-27 06:51:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:06 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-27 06:51:06 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 06:51:06 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260427010556741\simulation.log) from usersimulation-20260427010556741
+2026-04-27 06:51:06 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-27 06:51:06 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-27 06:51:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-27 06:51:07 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-27 06:51:21 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 06:51:22 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 06:51:26 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-27 06:51:26 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-27 06:51:26 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-27 06:51:26 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-27 06:51:27 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:27 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:27 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:27 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:27 [gatling-1-2] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:27 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:27 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:27 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:27 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:27 [gatling-1-3] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:28 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:28 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:28 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:28 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:28 [gatling-1-4] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:29 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:29 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:29 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:29 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:29 [gatling-1-5] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:30 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:30 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:30 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:30 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:30 [gatling-1-6] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:31 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:31 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:31 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:31 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:31 [gatling-1-7] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:32 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:32 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:32 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:32 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:32 [gatling-1-8] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:33 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:33 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:33 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:33 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:33 [gatling-1-9] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:34 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@24abd6a has finished injecting
+2026-04-27 06:51:34 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-27 06:51:34 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:34 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:34 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:34 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:34 [gatling-1-10] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:35 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Create User' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:35 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get All Users' failed to execute: No attribute named 'jwtToken' is defined
+2026-04-27 06:51:35 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Get User by ID' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:35 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Update User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:35 [gatling-1-11] ERROR i.g.http.action.HttpRequestAction - 'Delete User' failed to execute: No attribute named 'createdUserId' is defined
+2026-04-27 06:51:35 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-27 06:51:35 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-27 06:51:35 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-27 06:51:36 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 06:51:36 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260427010625647\simulation.log) from usersimulation-20260427010625647
+2026-04-27 06:51:36 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-27 06:51:36 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-27 06:51:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-27 06:51:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-27 06:54:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 06:55:07 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 06:56:29 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 06:56:31 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 06:56:36 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-27 06:56:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-27 06:56:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-27 06:56:36 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-27 06:56:44 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@5520c9bd has finished injecting
+2026-04-27 06:56:44 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-27 06:56:47 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-27 06:56:47 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-27 06:56:47 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-27 06:56:47 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 06:56:47 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260427011135132\simulation.log) from usersimulation-20260427011135132
+2026-04-27 06:56:47 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-27 06:56:47 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-27 06:56:47 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-27 06:56:47 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-27 07:00:08 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 07:00:10 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 07:01:00 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 07:02:31 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 07:02:32 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 07:02:36 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-27 07:02:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-27 07:02:36 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-27 07:02:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-27 07:02:44 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@74a4993d has finished injecting
+2026-04-27 07:02:44 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-27 07:02:47 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-27 07:02:47 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-27 07:02:47 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-27 07:02:47 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 07:02:47 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260427011735286\simulation.log) from usersimulation-20260427011735286
+2026-04-27 07:02:47 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-27 07:02:47 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-27 07:02:47 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-27 07:02:47 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-27 07:09:36 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 07:14:44 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 07:23:49 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 07:27:19 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+2026-04-27 07:27:21 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2026-04-27 07:27:25 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+2026-04-27 07:27:25 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+2026-04-27 07:27:25 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+2026-04-27 07:27:25 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+2026-04-27 07:27:33 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@21b1a179 has finished injecting
+2026-04-27 07:27:33 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+2026-04-27 07:27:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario User Operations are stopped
+2026-04-27 07:27:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+2026-04-27 07:27:36 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+2026-04-27 07:27:36 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+2026-04-27 07:27:36 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\HRITIKA SINGH\Documents\Web-Programming-PRG240\SpringMvcHelloWorld 1\SpringMvcHelloWorld 1\target\gatling\usersimulation-20260427014224343\simulation.log) from usersimulation-20260427014224343
+2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
+2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines

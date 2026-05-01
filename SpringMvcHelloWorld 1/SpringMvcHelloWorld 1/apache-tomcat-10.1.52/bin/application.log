@@ -8992,3 +8992,195 @@ java.lang.RuntimeException: Username already exists
 2026-04-27 07:44:08 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
 2026-04-27 07:44:15 [http-nio-8080-exec-4] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/api/addPet — redirecting to login
 2026-04-27 07:44:27 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 3 pets from database
+2026-04-27 08:03:21 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-04-27 08:03:25 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-04-27 08:03:25 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-04-27 08:03:25 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-04-27 08:03:27 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 08:03:28 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7512 ms
+2026-04-27 08:03:32 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 3 pets from database
+2026-04-27 08:05:42 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-04-27 08:05:43 [http-nio-8080-exec-5] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-04-27 08:05:43 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 3 pets from database
+2026-04-27 08:08:26 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 3 pets from database
+2026-04-27 08:08:43 [http-nio-8080-exec-6] INFO  com.example.dao.PetDAOImpl - Pet deleted with id: 3
+2026-04-27 08:08:49 [http-nio-8080-exec-10] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-27 08:09:50 [http-nio-8080-exec-5] INFO  com.example.service.UserService - Retrieved 3 users from database
+2026-04-27 08:10:48 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authenticating user: hri
+2026-04-27 08:10:48 [http-nio-8080-exec-10] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-04-27 08:10:49 [http-nio-8080-exec-10] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-04-27 08:10:58 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-27 08:10:58 [http-nio-8080-exec-9] ERROR com.example.dao.UserDAOImpl - Username already exists: hri
+2026-04-27 08:10:58 [http-nio-8080-exec-9] ERROR c.example.controller.UserController - Database error while creating user: Username already exists
+java.lang.RuntimeException: Username already exists
+	at com.example.dao.UserDAOImpl.save(UserDAOImpl.java:80)
+	at com.example.service.UserService.registerUser(UserService.java:28)
+	at com.example.controller.UserController.createUser(UserController.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-04-27 08:11:33 [http-nio-8080-exec-2] INFO  com.example.service.UserService - Cannot update - user not found with id: 3
+2026-04-27 08:11:45 [http-nio-8080-exec-8] INFO  com.example.dao.UserDAOImpl - User updated successfully with id: 22
+2026-04-27 08:11:58 [http-nio-8080-exec-6] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-27 08:11:58 [http-nio-8080-exec-6] ERROR com.example.dao.UserDAOImpl - Username already exists: hri
+2026-04-27 08:11:58 [http-nio-8080-exec-6] ERROR c.example.controller.UserController - Database error while creating user: Username already exists
+java.lang.RuntimeException: Username already exists
+	at com.example.dao.UserDAOImpl.save(UserDAOImpl.java:80)
+	at com.example.service.UserService.registerUser(UserService.java:28)
+	at com.example.controller.UserController.createUser(UserController.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-04-27 08:12:01 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Registering new user: fullName=Hri, email=hri@example.com, username=hri
+2026-04-27 08:12:01 [http-nio-8080-exec-4] ERROR com.example.dao.UserDAOImpl - Username already exists: hri
+2026-04-27 08:12:01 [http-nio-8080-exec-4] ERROR c.example.controller.UserController - Database error while creating user: Username already exists
+java.lang.RuntimeException: Username already exists
+	at com.example.dao.UserDAOImpl.save(UserDAOImpl.java:80)
+	at com.example.service.UserService.registerUser(UserService.java:28)
+	at com.example.controller.UserController.createUser(UserController.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-04-27 08:12:34 [http-nio-8080-exec-3] INFO  com.example.dao.UserDAOImpl - User deleted successfully with id: 22
+2026-04-27 08:13:05 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authenticating user: hri
+2026-04-27 08:13:05 [http-nio-8080-exec-1] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-04-27 08:13:05 [http-nio-8080-exec-1] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-04-27 08:13:46 [http-nio-8080-exec-6] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-04-27 08:14:15 [http-nio-8080-exec-7] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/api/addPet — redirecting to login
+2026-04-27 08:14:36 [http-nio-8080-exec-9] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/api/addPet — redirecting to login
+2026-04-27 08:15:08 [http-nio-8080-exec-5] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-05-01 16:19:40 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-05-01 16:19:44 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-05-01 16:19:45 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-05-01 16:19:45 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-05-01 16:19:47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-01 16:19:48 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8624 ms
+2026-05-01 16:19:52 [http-nio-8080-exec-5] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-05-01 16:20:28 [http-nio-8080-exec-10] INFO  com.example.service.LoginService - Login attempt for username: hritika.singh
+2026-05-01 16:20:28 [http-nio-8080-exec-10] INFO  com.example.service.LoginService - Login successful for username: hritika.singh
+2026-05-01 16:20:29 [http-nio-8080-exec-3] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-05-01 16:20:57 [http-nio-8080-exec-2] INFO  com.example.service.PetService - Retrieved 2 pets from database
+2026-05-01 16:22:39 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authenticating user: hri
+2026-05-01 16:22:40 [http-nio-8080-exec-8] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-05-01 16:22:40 [http-nio-8080-exec-8] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-05-01 16:22:46 [http-nio-8080-exec-7] INFO  com.example.service.UserService - Authenticating user: hri
+2026-05-01 16:22:46 [http-nio-8080-exec-7] WARN  com.example.service.UserService - Authentication failed for user: hri
+2026-05-01 16:22:46 [http-nio-8080-exec-7] WARN  c.example.controller.AuthController - API login failed for user: hri
+2026-05-01 16:22:54 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hri
+2026-05-01 16:22:55 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-05-01 16:22:55 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-05-01 16:23:19 [http-nio-8080-exec-2] INFO  c.e.security.SessionAuthInterceptor - Unauthenticated access to /SpringMvcHelloWorld/api/addPet — redirecting to login
+2026-05-01 16:23:55 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authenticating user: hri
+2026-05-01 16:23:55 [http-nio-8080-exec-4] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-05-01 16:23:55 [http-nio-8080-exec-4] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-05-01 16:24:54 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authenticating user: hri
+2026-05-01 16:24:54 [http-nio-8080-exec-9] INFO  com.example.service.UserService - Authentication successful for user: hri
+2026-05-01 16:24:54 [http-nio-8080-exec-9] INFO  c.example.controller.AuthController - API login success for user: hri
+2026-05-01 16:30:05 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+2026-05-01 16:30:09 [main] INFO  com.example.dao.UserDAOImpl - User table initialized successfully
+2026-05-01 16:30:09 [main] INFO  com.example.dao.EmployeeDAOImpl - Employee table initialized successfully
+2026-05-01 16:30:10 [main] INFO  com.example.dao.PetDAOImpl - Pet table initialized successfully
+2026-05-01 16:30:11 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-01 16:30:12 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7071 ms

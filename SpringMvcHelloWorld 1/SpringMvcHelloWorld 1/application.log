@@ -769,3 +769,6 @@ Caused by: java.lang.ClassNotFoundException: com.example.gatling.LoginSimulation
 2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 83 lines
 2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
 2026-04-27 07:27:36 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 83 lines
+2026-04-27 08:02:18 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-27 08:02:48 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-01 16:18:42 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
